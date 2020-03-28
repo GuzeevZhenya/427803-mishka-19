@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+        <picture>
+          <img src="https://via.placeholder.com/150x150" alt="Логотип сайта" class="header__logo-image logo">
+        </picture>
+      </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a></li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a></li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a></li>
+            <li class="site-list__item">
+              <a href="#">Корзина:пока пуста</a></li>
+          </ul>
+      </nav>
+      <nav class="nav-down">
+        <div class="main-nav__news-wrapper">
+          <ul class="main-nav__news">
+            <li class="main-nav__item">Новые поступления</li>
+            <li class="main-nav__item">Распродажа</li>
+          </ul>
+        </div>
+        <span>class="main-nav__delivery">Бесплатная доставка по россии</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form">
+    <h1>Вязание на заказ</h1>
+    <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+      уточнить детали.</p>
+
+    <div class="form__type type">
+      <div class="type__wrapper">
+        <h2 class="type__title">Тип</h2>
+        <div class="type__radio">
+          <input type="radio">
+          <label for="">Аксессуар для интерьера</label>
+          <input type="radio">
+          <label for="">Детская игрушка</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form__color color">
+      <div class="color__wrapper">
+        <h2 class="color__title">Цвет</h2>
+        <ul class="color__list">
+          <li class="color__item">
+            <input type="submit">
+            <label for="">Белый</label>
+          </li>
+          <li class="color__item">
+            <input type="submit">
+            <label for="">Белый</label>
+          </li>
+          <li class="color__item">
+            <input type="submit">
+            <label for="">«Тиффани»</label>
+          </li>
+          <li class="color__item">
+            <input type="submit">
+            <label for="">Черный</label>
+          </li>
+          <li class="color__item">
+            <input type="submit">
+            <label for="">Розовый</label>
+          </li>
+          <li class="color__item">
+            <input type="submit">
+            <label for="">Оранжевый</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="form__fio fio">
+      <div class="fio__wrapper">
+        <h2 class="fio__title">ФИО</h2>
+        <ul class="fio__list">
+          <li>
+            <label for="">Имя:</label>
+            <input type="text" placeholder="Введите ваше имя*">
+          </li>
+          <li>
+            <label for="">Фамилия:</label>
+            <input type="text" placeholder="Укажите фамилию*">
+          </li>
+          <li>
+            <label for="">Отчество:</label>
+            <input type="text" placeholder="Отчество, если желаете">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="form__contacts">
+      <div class="form__telephone telephone">
+        <h2>Тел</h2>
+        <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <svg></svg>
+      </div>
+      <div class="form__email email">
+        <h2>E-mail</h2>
+        <input type="text" placeholder="Ваш Email*">
+        <svg></svg>
+      </div>
+    </div>
+
+    <div class="form__additionally additionally">
+      <div class="additionally__wrapper">
+        <h2 class="additionally__title"></h2>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
+    </div>
+
+    <div class="send__form">
+      <small class="form__required">* — Обязательные поля</small>
+      <button form="send__button button">Отправить заказ</button>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
