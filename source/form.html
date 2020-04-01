@@ -23,20 +23,22 @@
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a></li>
             <li class="site-list__item">
-              <a href="#">Вязание на заказ</a></li>
+              <a>Вязание на заказ</a></li>
             <li class="site-list__item">
-              <a href="#">Поиск по сайту</a></li>
+              <a href="#">Поиск по сайту</a>
+            </li>
             <li class="site-list__item">
-              <a href="#">Корзина:пока пуста</a></li>
+              <a href="#">Корзина:пока пуста</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> Новые поступления </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> Распродажа </a>
+            </li>
+            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
           </ul>
-          <!--Возможно так, но это не точно-->
-          <ul class="main-nav__bottom nav-bottom">
-            <li class="nav-bottom__item">Новые поступления</li>
-            <li class="nav-bottom__item">Распродажа</li>
-          </ul>
-          <span class="main-nav__delivery">Бесплатная доставка по россии</span>
       </nav>
-
     </div>
   </header>
 
@@ -50,10 +52,10 @@
         <div class="type__wrapper">
           <h2 class="type__title">Тип</h2>
           <div class="type__radio">
-            <input type="radio">
-            <label for="">Аксессуар для интерьера</label>
-            <input type="radio">
-            <label for="">Детская игрушка</label>
+            <input name="type-order" id="accessories" type="radio">
+            <label for="accessories">Аксессуар для интерьера</label>
+            <input name="type-order" id="kids-toys" type="radio">
+            <label for="kids-toys">Детская игрушка</label>
           </div>
         </div>
       </div>
@@ -63,28 +65,28 @@
           <h2 class="color__title">Цвет</h2>
           <ul class="color__list">
             <li class="color__item">
-              <input type="submit">
-              <label for="">Белый</label>
+              <input name="color" id="white" type="submit">
+              <label for="white">Белый</label>
             </li>
             <li class="color__item">
-              <input type="submit">
-              <label for="">Белый</label>
+              <input name="color" id="grey" type="submit">
+              <label for="grey">Серый</label>
             </li>
             <li class="color__item">
-              <input type="submit">
-              <label for="">«Тиффани»</label>
+              <input name="color" id="tiffany" type="submit">
+              <label for="tiffany">«Тиффани»</label>
             </li>
             <li class="color__item">
-              <input type="submit">
-              <label for="">Черный</label>
+              <input name="color" id="black" type="submit">
+              <label for="black">Черный</label>
             </li>
             <li class="color__item">
-              <input type="submit">
-              <label for="">Розовый</label>
+              <input name="color" id="pink" type="submit">
+              <label for="pink">Розовый</label>
             </li>
             <li class="color__item">
-              <input type="submit">
-              <label for="">Оранжевый</label>
+              <input name="color" id="orange" type="submit">
+              <label for="orange">Оранжевый</label>
             </li>
           </ul>
         </div>
@@ -95,16 +97,16 @@
           <h2 class="fio__title">ФИО</h2>
           <ul class="fio__list">
             <li>
-              <label for="">Имя:</label>
-              <input type="text" placeholder="Введите ваше имя*">
+              <label for="fio-name">Имя:</label>
+              <input name="fio" id="fio-name" type="text" placeholder="Введите ваше имя*">
             </li>
             <li>
-              <label for="">Фамилия:</label>
-              <input type="text" placeholder="Укажите фамилию*">
+              <label for="fio-surname">Фамилия:</label>
+              <input name="fio" id="fio-surname" type="text" placeholder="Укажите фамилию*">
             </li>
             <li>
-              <label for="">Отчество:</label>
-              <input type="text" placeholder="Отчество, если желаете">
+              <label for="fio-patronymic">Отчество:</label>
+              <input name="fio" id="fio-patronymic" type="text" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </div>
@@ -113,12 +115,12 @@
       <div class="form__contacts">
         <div class="form__telephone telephone">
           <h2>Тел</h2>
-          <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           <svg></svg>
         </div>
         <div class="form__email email">
           <h2>E-mail</h2>
-          <input type="text" placeholder="Ваш Email*">
+          <input name="telephone" id="email" type="text" placeholder="Ваш Email*">
           <svg></svg>
         </div>
       </div>

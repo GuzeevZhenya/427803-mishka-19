@@ -11,7 +11,7 @@
 
   <header class="header">
     <div class="header__wrapper">
-      <a href="#" class="header__logo">
+      <a class="header__logo">
         <picture>
           <img src="https://via.placeholder.com/150x150" alt="Логотип сайта" class="header__logo-image logo">
         </picture>
@@ -26,17 +26,19 @@
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a></li>
             <li class="site-list__item">
-              <a href="#">Поиск по сайту</a></li>
+              <a href="#">Поиск по сайту</a>
+            </li>
             <li class="site-list__item">
-              <a href="#">Корзина:пока пуста</a></li>
+              <a href="#">Корзина:пока пуста</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> Новые поступления </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> Распродажа </a>
+            </li>
+            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
           </ul>
-
-          <!--Возможно так, но это не точно-->
-          <ul class="main-nav__bottom nav-bottom">
-            <li class="nav-bottom__item">Новые поступления</li>
-            <li class="nav-bottom__item">Распродажа</li>
-          </ul>
-          <span class="main-nav__delivery">Бесплатная доставка по россии</span>
       </nav>
     </div>
   </header>
@@ -45,22 +47,19 @@
     <section class="main-intro">
       <div class="main-intro__wrapper">
         <div class="main-intro__image main-image">
-          <picture>
-            <img src="https://via.placeholder.com/150x150" alt="">
-          </picture>
           <h1 class="main-image__title">Милые штуки ручной работы для дома</h1>
         </div>
         <div class="main-preview">
 
           <div class="main-preview__interior-items">
-            <a href="#">
-              <p class="main-preview__title">Предметы интерьера</p>
+            <a class="main-preview__title" href="#">
+              Предметы интерьера
             </a>
           </div>
 
           <div class="main-preview__kid-games">
-            <a href="#">
-              <p class="main-preview__title">Детские игрушки</p>
+            <a class="main-preview__title" href="#">
+              Детские игрушки
             </a>
           </div>
         </div>
@@ -69,24 +68,22 @@
 
     <section class="product-list">
       <div class="product-list__wrapper">
-        <div class="product-list__title product-name">
-          <h2 class="product-name__title">Вязаные корзинки</h2>
-          <span class="product-name__top">Товар недели</span>
-        </div>
+        <h2 class="product-name__title">Вязаные корзинки</h2>
+        <span class="product-name__top">Товар недели</span>
         <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <div class="product-list__properties properties">
-          <div class="properties__color">
-            <p>Цвет</p>
-            <p>«Тиффани»/серый</p>
-          </div>
-          <div class="properties__diameter">
-            <p>Диаметр</p>
-            <p>25 см</p>
-          </div>
-          <div class="properties__height">
-            <p>Высота</p>
-            <p>15 см</p>
-          </div>
+          <dl class="properties__color">
+            <dt>Цвет</dt>
+            <dt>«Тиффани»/серый</dt>
+          </dl>
+          <dl class="properties__diameter">
+            <dt>Диаметр</dt>
+            <dt>25 см</dt>
+          </dl>
+          <dl class="properties__height">
+            <dt>Высота</dt>
+            <dt>15 см</dt>
+          </dl>
         </div>
         <picture>
           <img src="" alt="">
@@ -99,14 +96,14 @@
     <section class="about-us">
       <div class="about-us__wrapper">
         <h2 class="about-us__title">Коротко о нас:</h2>
-        <div class="about-us__advantages">
-          <p class="about-us__description">Экологически чистые материалы</p>
-          <p class="about-us__description">Скандинавский стиль по российской цене</p>
-          <p class="about-us__description">Увеличивает лайки на фотографиях</p>
-          <p class="about-us__description">Связано вручную с любовью и умилением</p>
-          <p class="about-us__description">Поддержка отечественного производителя</p>
-          <p class="about-us__description">Поставляется в подарочной упаковке</p>
-        </div>
+        <ul class="about-us__advantages">
+          <li class="about-us__description">Экологически чистые материалы</li>
+          <li class="about-us__description">Скандинавский стиль по российской цене</li>
+          <li class="about-us__description">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__description">Связано вручную с любовью и умилением</li>
+          <li class="about-us__description">Поддержка отечественного производителя</li>
+          <li class="about-us__description">Поставляется в подарочной упаковке</li>
+        </ul>
       </div>
     </section>
 
@@ -119,7 +116,7 @@
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!</p>
         <h2 class="reviews__name">Анастасия Красильникова</h2>
-        <a class="reviews__email">@misssssiskras</a>
+        <a href="#" class="reviews__email">@misssssiskras</a>
         <div class="reviews__buttons">
           <button class="reviews__button reviews__button--next"></button>
           <button class="reviews__button reviews__button--prev"></button>
@@ -178,7 +175,6 @@
 
         </svg>
       </a>
-
     </div>
   </footer>
 

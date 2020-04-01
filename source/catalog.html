@@ -22,21 +22,25 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Каталог товаров</a></li>
+              <a>Каталог товаров</a>
+            </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a></li>
+              <a href="form.html">Вязание на заказ</a>
+            </li>
             <li class="site-list__item">
-              <a href="#">Поиск по сайту</a></li>
+              <a href="#">Поиск по сайту</a>
+            </li>
             <li class="site-list__item">
-              <a href="#">Корзина:пока пуста</a></li>
+              <a href="#">Корзина:пока пуста</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> Новые поступления </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> Распродажа </a>
+            </li>
+            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
           </ul>
-
-          <!--Возможно так, но это не точно-->
-          <ul class="main-nav__bottom nav-bottom">
-            <li class="nav-bottom__item">Новые поступления</li>
-            <li class="nav-bottom__item">Распродажа</li>
-          </ul>
-          <span class="main-nav__delivery">Бесплатная доставка по россии</span>
       </nav>
     </div>
   </header>
@@ -47,51 +51,59 @@
 
       <div class="catalog__item">
         <picture>
-          <img src="https://via.placeholder.com/150x150">
+          <a href="#"><img src="https://via.placeholder.com/150x150"></a>
         </picture>
-
         <div class="catalog__item-info">
-          <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+          <a href="#" class="catalog__title">Зайчик-попрыгайчик</a>
           <p class="catalog__text">Рост 30 см, вес 200 г</p>
           <div class="catalog__price">
             <span>1 200 руб.</span>
-            <svg>
+            <a href="#">
+              <svg>
 
-            </svg>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
 
       <div class="catalog__item">
         <picture>
-          <img src="https://via.placeholder.com/150x150">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150">
+          </a>
         </picture>
-
         <div class="catalog__item-info">
-          <h2 class="catalog__title">Корзинка для белья</h2>
+          <a href="#" class="catalog__title">Корзинка для белья</a>
           <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
           <div class="catalog__price">
             <span>690 руб.</span>
-            <svg>
+            <a href="">
+              <svg>
 
-            </svg>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
 
       <div class="catalog__item">
         <picture>
-          <img src="https://via.placeholder.com/150x150">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150">
+          </a>
         </picture>
 
         <div class="catalog__item-info">
-          <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+          <a href="#" class="catalog__title">Большая корзинка для игрушек</a>
           <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
           <div class="catalog__price">
             <span>1 500 руб.</span>
-            <svg>
+            <a href="">
+              <svg>
 
-            </svg>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -115,12 +127,15 @@
     </div>
   </main>
 
-  <section class="modal_">
+  <section class="modal">
     <h2 class="modal__title">Добавить в корзину</h2>
-    <input name="select-size" type="radio" id="radioButton">s
-    <input name="select-size" type="radio" id="radioButton">m
-    <input name="select-size" type="radio" id="radioButton">l
-    <button class="add-button button">Добавить</button>
+    <input name="select-size" type="radio" id="radioButton">
+    <label for="">s</label>
+    <input name="select-size" type="radio" id="radioButton">
+    <label for="">m</label>
+    <input name="select-size" type="radio" id="radioButton">
+    <label for="">l</label>
+    <button type="submit" class="add-button button">Добавить</button>
   </section>
 
   <footer class="footer">
@@ -148,10 +163,11 @@
           </li>
         </ul>
       </div>
-      <a class="footer__copyright copyright" href="https://up.htmlacademy.ru/adaptive/19">Разработано</a>
-      <svg>
+      <a class="footer__copyright copyright" href="https://up.htmlacademy.ru/adaptive/19">Разработано
+        <svg>
 
-      </svg>
+        </svg>
+      </a>
     </div>
   </footer>
 
