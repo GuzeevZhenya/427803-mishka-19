@@ -16,29 +16,27 @@
           <img src="https://via.placeholder.com/150x150" alt="Логотип сайта" class="header__logo-image logo">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
       <nav class="main-nav">
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Каталог товаров</a></li>
+              <a href="catalog.html">Каталог товаров</a></li>
             <li class="site-list__item">
-              <a href="#">Вязание на заказ</a></li>
+              <a href="form.html">Вязание на заказ</a></li>
             <li class="site-list__item">
               <a href="#">Поиск по сайту</a></li>
             <li class="site-list__item">
               <a href="#">Корзина:пока пуста</a></li>
           </ul>
-      </nav>
 
-      <nav class="nav-down">
-        <div class="nav-down__wrapper">
-          <ul class="nav-down__news">
-            <li class="nav-down_item">Новые поступления</li>
-            <li class="nav-down__item">Распродажа</li>
+          <!--Возможно так, но это не точно-->
+          <ul class="main-nav__bottom nav-bottom">
+            <li class="nav-bottom__item">Новые поступления</li>
+            <li class="nav-bottom__item">Распродажа</li>
           </ul>
-        </div>
-        <span class="main-nav__delivery">Бесплатная доставка по россии</span>
+          <span class="main-nav__delivery">Бесплатная доставка по россии</span>
       </nav>
     </div>
   </header>
@@ -73,7 +71,7 @@
       <div class="product-list__wrapper">
         <div class="product-list__title product-name">
           <h2 class="product-name__title">Вязаные корзинки</h2>
-          <span class="product-name--top">Товар недели</span>
+          <span class="product-name__top">Товар недели</span>
         </div>
         <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <div class="product-list__properties properties">
@@ -115,16 +113,16 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
-        <button class="reviews__button button">Написать</button>
+        <a class="reviews__link button">Написать</a>
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как у популярных
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!</p>
         <h2 class="reviews__name">Анастасия Красильникова</h2>
-        <p class="reviews__email">@misssssiskras</p>
+        <a class="reviews__email">@misssssiskras</a>
         <div class="reviews__buttons">
-          <button class="button-next"></button>
-          <button class="button-before"></button>
+          <button class="reviews__button reviews__button--next"></button>
+          <button class="reviews__button reviews__button--prev"></button>
         </div>
       </div>
     </section>
@@ -134,7 +132,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__email">
           <p>e-mail:</p>
-          <a href="">info@mimimishashop.ru</a>
+          <a href="mailto:info@mimimishashop.ru">info@mimimishashop.ru</a>
         </div>
         <div class="contacts__adress">
           <p>адрес:</p>
@@ -142,7 +140,7 @@
             ул. Большая Конюшенная,
             д. 19/8, офис 101</p>
         </div>
-        <button class="contacts__button button">Напишите нам</button>
+        <a class="contacts__link button">Напишите нам</a>
         <iframe src="" frameborder="0" class="contacts__location">
         </iframe>
       </div>
@@ -156,19 +154,19 @@
         <ul class="social__list">
 
           <li class="social__item">
-            <a href="" class="social__link social__link--insta">
+            <a href="#" class="social__link social__link--insta">
               <svg></svg>
             </a>
           </li>
 
           <li class="social__item">
-            <a href="" class="social__link social__link--facebook">
+            <a href="#" class="social__link social__link--facebook">
               <svg></svg>
             </a>
           </li>
 
           <li class="social__item">
-            <a href="" class="social__link social__link--twitter">
+            <a href="#" class="social__link social__link--twitter">
               <svg></svg>
             </a>
           </li>
