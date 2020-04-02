@@ -54,7 +54,9 @@
           <a href="#"><img src="https://via.placeholder.com/150x150"></a>
         </picture>
         <div class="catalog__item-info">
-          <a href="#" class="catalog__title">Зайчик-попрыгайчик</a>
+          <a href="#" class="catalog__title">
+            <h2>Зайчик-попрыгайчик</h2>
+          </a>
           <p class="catalog__text">Рост 30 см, вес 200 г</p>
           <div class="catalog__price">
             <span>1 200 руб.</span>
@@ -74,7 +76,9 @@
           </a>
         </picture>
         <div class="catalog__item-info">
-          <a href="#" class="catalog__title">Корзинка для белья</a>
+          <a href="#" class="catalog__title">
+            <h2>Корзинка для белья</h2>
+          </a>
           <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
           <div class="catalog__price">
             <span>690 руб.</span>
@@ -95,7 +99,9 @@
         </picture>
 
         <div class="catalog__item-info">
-          <a href="#" class="catalog__title">Большая корзинка для игрушек</a>
+          <a href="#" class="catalog__title">
+            <h2>Большая корзинка для игрушек</h2>
+          </a>
           <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
           <div class="catalog__price">
             <span>1 500 руб.</span>
@@ -109,14 +115,12 @@
       </div>
 
       <div class="catalog__video video">
-        <div class="video__info">
-          <svg></svg>
-          <h2 class="video__info-title">Процесс производства</h2>
-        </div>
-        <p class="">
+        <svg></svg>
+        <h2 class="video__info-title">Процесс производства</h2>
+        <p class="video__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <a class="link__order button">
+        <a class="video__link button">
           Сделать заказ
         </a>
       </div>
@@ -127,16 +131,16 @@
     </div>
   </main>
 
-  <section class="modal">
+  <form class="modal">
     <h2 class="modal__title">Добавить в корзину</h2>
-    <input name="select-size" type="radio" id="radioButton">
-    <label for="">s</label>
-    <input name="select-size" type="radio" id="radioButton">
-    <label for="">m</label>
-    <input name="select-size" type="radio" id="radioButton">
-    <label for="">l</label>
-    <button type="submit" class="add-button button">Добавить</button>
-  </section>
+    <input name="select-size" type="radio" id="s-size">
+    <label for="s-size">s</label>
+    <input name="select-size" type="radio" id="m-size">
+    <label for="m-size">m</label>
+    <input name="select-size" type="radio" id="l-size">
+    <label for="l-size">l</label>
+    <button type="submit" class="modal__button button">Добавить</button>
+  </form>
 
   <footer class="footer">
     <div class="footer__wrapper">
