@@ -1,0 +1,16 @@
+.product-list {}
+
+.product-list__title {
+  @include font-text($OpenSans, 25px, 30px, 700);
+  color: $black;
+}
+
+.product-list__top {
+  @include font-text($OpenSans, 17px, 20px, 700);
+  color: $seafoam-blue;
+}
+
+.product-list__text {
+  @include font-text($OpenSans, 15px, 24px, 400);
+  color: $text;
+}
