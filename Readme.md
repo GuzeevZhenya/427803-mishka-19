@@ -1,7 +1,8 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-- Студент: [Евгений Гузеев](https://up.htmlacademy.ru/adaptive/19/user/427803).
-- Наставник: [Никита Рогатнев](https://vk.com/rogatnev_nikita).
+* Студент: [Евгений Гузеев](https://up.htmlacademy.ru/adaptive/19/user/427803).
+* Наставник: [Никита Рогатнев](https://vk.com/rogatnev_nikita).
+
 
 ---
 
