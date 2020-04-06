@@ -1,0 +1,11 @@
+.about-us {}
+
+.about-us__title {
+  @include font-text($OpenSans, 25px, 30px, 700);
+  color: $black;
+}
+
+.about-us__description {
+  @include font-text($OpenSans, 17px, 20px, 700);
+  color: $black;
+}
