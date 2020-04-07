@@ -1,0 +1,10 @@
+.color {}
+
+.color__list {}
+
+.color__item {}
+
+.color__name {
+  @include font-text($OpenSans, 17px, 18px, 700);
+  color: $black;
+}
