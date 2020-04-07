@@ -1,0 +1,6 @@
+.form {}
+
+.form__title {
+  @include font-text($OpenSans, 17px, 16px, 700);
+  color: $seafoam-blue;
+}
