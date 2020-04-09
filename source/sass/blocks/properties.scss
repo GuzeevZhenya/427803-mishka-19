@@ -1,0 +1,6 @@
+.properties {}
+
+.properties dt {
+  @include font-text($OpenSans, 15px, 20px, 400);
+  color: $text;
+}

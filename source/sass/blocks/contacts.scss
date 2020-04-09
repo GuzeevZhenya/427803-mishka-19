@@ -1,0 +1,22 @@
+.contacts {}
+
+.contacts__title {
+  @include font-text($OpenSans, 18px, 30px, 700);
+  color: $black;
+}
+
+.contacts__email p {
+  @include font-text($OpenSans, 15px, 30px, 400);
+}
+
+.contacts__email a {
+  @include font-text($OpenSans, 15px, 30px, 400);
+}
+
+.contacts__adress p {
+  @include font-text($OpenSans, 15px, 30px, 400);
+}
+
+.contacts__adress a {
+  @include font-text($OpenSans, 15px, 30px, 400);
+}

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -41,110 +42,100 @@
             </li>
             <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
           </ul>
+        </div>
       </nav>
     </div>
   </header>
 
-  <form class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <input name="select-size" type="radio" id="s-size">
-    <label for="s-size">s</label>
-    <input name="select-size" type="radio" id="m-size">
-    <label for="m-size">m</label>
-    <input name="select-size" type="radio" id="l-size">
-    <label for="l-size">l</label>
-    <button type="submit" class="modal__button button">Добавить</button>
-  </form>
+  <main class="main">
+    <div class="main__wrapper">
+      <h1 class="main__title">Каталого товаров</h1>
+      <section class="catalog">
+        <div class="catalog__item">
+          <picture>
+            <a href="#"><img src="https://via.placeholder.com/150x150"></a>
+          </picture>
+          <div class="catalog__item-info">
+            <h2 class="catalog__item-title">
+              <a href="#" class="catalog__item-link">
+                Зайчик-попрыгайчик
+              </a>
+            </h2>
+            <p class="catalog__item-text">Рост 30 см, вес 200 г</p>
+            <div class="catalog__item-price">
+              <span>1 200 руб.</span>
+              <a href="#">
+                <svg>
 
-  <main class="catalog">
-    <div class="catalog__wrapper">
-      <h1 class="catalog__title">Каталого товаров</h1>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <div class="catalog__item">
-        <picture>
-          <a href="#"><img src="https://via.placeholder.com/150x150"></a>
-        </picture>
-        <div class="catalog__item-info">
-          <h2 class="catalog__title">
-            <a href="#" class="catalog__link">
-              Зайчик-попрыгайчик
-            </a>
-          </h2>
-          <p class="catalog__text">Рост 30 см, вес 200 г</p>
-          <div class="catalog__price">
-            <span>1 200 руб.</span>
+        <div class="catalog__item">
+          <picture>
             <a href="#">
-              <svg>
-
-              </svg>
+              <img src="https://via.placeholder.com/150x150">
             </a>
+          </picture>
+          <div class="catalog__item-info">
+            <h2 class="catalog__item-title">
+              <a href="#" class="catalog__item-link">
+                Корзинка для белья
+              </a>
+            </h2>
+            <p class="catalog__item-text">Диаметр 15 см, высота 10 см</p>
+            <div class="catalog__item-price">
+              <span>690 руб.</span>
+              <a href="">
+                <svg>
+
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="catalog__item">
-        <picture>
-          <a href="#">
-            <img src="https://via.placeholder.com/150x150">
-          </a>
-        </picture>
-        <div class="catalog__item-info">
-          <h2 class="catalog__title">
-            <a href="#" class="catalog__link">
-              Корзинка для белья
-            </a>
-          </h2>
-          <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-          <div class="catalog__price">
-            <span>690 руб.</span>
-            <a href="">
-              <svg>
-
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog__item">
-        <picture>
-          <a href="#">
-            <img src="https://via.placeholder.com/150x150">
-          </a>
-        </picture>
-
-        <div class="catalog__item-info">
-          <h2 class="catalog__title">
-            <a href="#" class="catalog__link">
-              Большая корзинка для игрушек
-            </a>
-          </h2>
-          <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
-          <div class="catalog__price">
-            <span>1 500 руб.</span>
+        <div class="catalog__item">
+          <picture>
             <a href="#">
-              <svg>
-
-              </svg>
+              <img src="https://via.placeholder.com/150x150">
             </a>
+          </picture>
+
+          <div class="catalog__item-info">
+            <h2 class="catalog__item-title">
+              <a href="#" class="catalog__item-link">
+                Большая корзинка для игрушек
+              </a>
+            </h2>
+            <p class="catalog__item-text">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog__item-price">
+              <span>1 500 руб.</span>
+              <a href="#">
+                <svg>
+
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="catalog__video video">
-        <svg></svg>
-        <h2 class="video__info-title">Процесс производства</h2>
-        <p class="video__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a href="form.html" class="video__link button">
-          Сделать заказ
-        </a>
-      </div>
-      <picture>
+        <div class="catalog__video video">
+          <svg></svg>
+          <h2 class="video__title">Процесс производства</h2>
+          <p class="video__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a href="form.html" class="video__link button">
+            Сделать заказ
+          </a>
+        </div>
+        <picture>
 
-      </picture>
-    </div>
+        </picture>
+      </section>
     </div>
   </main>
 
@@ -183,6 +174,19 @@
       </a>
     </div>
   </footer>
+
+  <form class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__description">Выберите размер:</p>
+    <input name="select-size" type="radio" id="s-size">
+    <label class="modal__size" for="s-size">s</label>
+    <input name="select-size" type="radio" id="m-size">
+    <label class="modal__size" for="m-size">m</label>
+    <input name="select-size" type="radio" id="l-size">
+    <label class="modal__size" for="l-size">l</label>
+    <button type="submit" class="modal__button button">Добавить</button>
+  </form>
+
 
 </body>
 
