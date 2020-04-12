@@ -1,0 +1,22 @@
+.modal {}
+
+.modal__title {
+  @include font-text($OpenSans, 25px, 30px, 700);
+  color: $black;
+}
+
+.modal__description {
+  @include font-text($OpenSans, 15px, 30px, 700);
+  color: $text;
+}
+
+.modal__size {
+  @include font-text($OpenSans, 17px, 16px, 700);
+  color: $text;
+}
+
+.modal__button {
+  @include font-text($OpenSans, 17px, 16px, 700);
+  color: $white-three;
+  background-color: $seafoam-blue;
+}

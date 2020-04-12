@@ -1,8 +1,10 @@
-@import "general/fonts.scss";
-@import "general/global.scss";
-@import "general/mixin.scss";
-@import "general/normolize.scss";
 @import "general/vars.scss";
+@import "general/normalize.scss";
+@import "general/fonts.scss";
+@import "general/mixin.scss";
+@import "general/global.scss";
+
+
 
 @import "blocks/about-us.scss";
 @import "blocks/additionally.scss";
@@ -17,6 +19,7 @@
 @import "blocks/form-contacts.scss";
 @import "blocks/form-submit.scss";
 @import "blocks/form.scss";
+@import "blocks/main.scss";
 @import "blocks/main-image.scss";
 @import "blocks/main-intro.scss";
 @import "blocks/main-nav.scss";
