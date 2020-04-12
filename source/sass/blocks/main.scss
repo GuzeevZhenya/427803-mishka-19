@@ -16,5 +16,8 @@
 
 .main__description {
   @include font-text($OpenSans, 13px, 24px, 400);
+  @include wrapper;
   color: $text;
+  margin: 0;
+  padding-top: 29px;
 }
