@@ -1,8 +1,13 @@
-.main-image {}
+.main-image {
+  @include wrapper;
+}
 
 
 .main-image__title {
-  font-size: 27px;
-  line-height: 30px;
+  @include font-text($OpenSans, 27px, 30px, 700);
   color: $very-dark-brown;
+  text-align: center;
+  margin: 0;
+  padding-top: 76px;
+  padding-bottom: 120px;
 }

@@ -1,21 +1,45 @@
-.product-list {}
+.product-list {
+  padding-top: 34px;
+  padding-bottom: 36px;
+}
+
+.product-list__wrapper {
+  @include wrapper;
+}
 
 .product-list__title {
   @include font-text($OpenSans, 25px, 30px, 700);
   color: $black;
+  margin: 0;
+  margin-bottom: 8px;
+
 }
 
 .product-list__top {
   @include font-text($OpenSans, 17px, 20px, 700);
   color: $seafoam-blue;
+  text-transform: uppercase;
 }
 
 .product-list__text {
   @include font-text($OpenSans, 15px, 24px, 400);
   color: $text;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .product-list__price {
   @include font-text($OpenSans, 17px, 24px, 700);
   color: $text;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.product-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

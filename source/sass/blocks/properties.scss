@@ -1,4 +1,20 @@
-.properties {}
+.properties {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+  margin-bottom: 28px;
+}
+
+.properties__group {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $white-two;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.properties__key {}
 
 .properties dt {
   @include font-text($OpenSans, 15px, 20px, 400);

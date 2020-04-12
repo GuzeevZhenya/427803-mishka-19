@@ -1,16 +1,30 @@
-.video {}
+.video {
 
-.video__info-title {
+  padding-top: 29px;
+  padding-bottom: 33px;
+}
+
+.video__title {
   @include font-text($OpenSans, 17px, 24px, 700);
   color: $black;
+  padding: 0 43px 26px 57px;
+
+  margin: 0;
+
 }
 
 .video__description {
   @include font-text($OpenSans, 13px, 24px, 400);
   color: $text;
+  margin: 34px 0 29px 0;
 }
 
 .video__link {
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $text;
+  max-width: 192px;
+}
+
+.video__info {
+  padding: 0 33px;
 }

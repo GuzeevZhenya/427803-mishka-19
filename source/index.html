@@ -26,7 +26,7 @@
               <a href="catalog.html">Каталог товаров</a></li>
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a></li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--hidden">
               <a href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
@@ -35,10 +35,10 @@
             <li class="site-list__item">
               <a href="#"> Новые поступления </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--hidden">
               <a href="#"> Распродажа </a>
             </li>
-            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
+            <li class="site-list__item main-nav__delivery site-list__item--hidden">Бесплатная доставка по россии</li>
           </ul>
       </nav>
     </div>
@@ -51,13 +51,13 @@
           <h1 class="main-image__title">Милые штуки ручной работы для дома</h1>
         </div>
         <div class="main-preview">
-          <div class="main-preview__interior-items">
+          <div class="main-preview__item main-preview__interior-items">
             <a class="main-preview__title" href="#">
               Предметы интерьера
             </a>
           </div>
 
-          <div class="main-preview__kid-games">
+          <div class="main-preview__item main-preview__kid-games">
             <a class="main-preview__title" href="#">
               Детские игрушки
             </a>
@@ -73,25 +73,26 @@
         <p class="product-list__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
           размерах.</p>
         <div class="product-list__properties properties">
-          <dl class="properties__color">
-            <dt class="properties__color properties__color--title">Цвет</dt>
-            <dt class="properties__color properties__color--name">«Тиффани»/серый</dt>
+          <dl class="properties__group">
+            <dt class="properties__key properties__key--title">Цвет</dt>
+            <dt class="properties__value properties__value--name">«Тиффани»/серый</dt>
           </dl>
-          <dl class="properties__diameter">
-            <dt class="properties__diameter properties__diameter--title">Диаметр</dt>
-            <dt class="properties__diameter properties__diameter--size">25 см</dt>
+          <dl class="properties__group">
+            <dt class="properties__key properties__key--title">Диаметр</dt>
+            <dt class="properties__value properties__value--size">25 см</dt>
           </dl>
-          <dl class="properties__height">
-            <dt class="properties__height properties__height--title">Высота</dt>
-            <dt class="properties__height properties__height--size">15 см</dt>
+          <dl class="properties__group">
+            <dt class="properties__key properties__key--title">Высота</dt>
+            <dt class="properties__value properties__value--size">15 см</dt>
           </dl>
         </div>
         <picture>
-          <img src="https://via.placeholder.com/150x150" alt="Картинка товара">
+          <img src="img/triple-set-mobile@1x.jpg" alt="Картинка товара">
         </picture>
         <span class="product-list__price">Цена:990 руб.</span>
         <a href="#" class="product-list__link button">Заказать</a>
       </div>
+      <span class="zigzag"></span>
     </section>
 
     <section class="about-us">
@@ -111,36 +112,47 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
-        <a class="reviews__link button">Написать</a>
+        <a class="reviews__link button reviews__link--hidden">Написать</a>
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как у популярных
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!</p>
-        <h2 class="reviews__name">Анастасия Красильникова</h2>
-        <a href="#" class="reviews__email">@misssssiskras</a>
+        <div class="reviews__block">
+          <h2 class="reviews__name">Анастасия Красильникова</h2>
+          <a href="#" class="reviews__email">@misssssiskras</a>
+        </div>
         <div class="reviews__buttons">
           <button class="reviews__button reviews__button--next"></button>
           <button class="reviews__button reviews__button--prev"></button>
         </div>
+        <a class="reviews__link button">Написать</a>
       </div>
     </section>
 
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__email">
-          <p>e-mail:</p>
-          <a href="mailto:info@mimimishashop.ru">info@mimimishashop.ru</a>
+
+        <div class="contacts__block">
+          <div class="contacts__email">
+            <p>e-mail:</p>
+            <a href="mailto:info@mimimishashop.ru">info@mimimishashop.ru</a>
+          </div>
+          <div class="contacts__adress">
+            <p>адрес:</p>
+            <p>г. Санкт-Петербург,
+              ул. Большая Конюшенная,
+              д. 19/8, офис 101</p>
+          </div>
         </div>
-        <div class="contacts__adress">
-          <p>адрес:</p>
-          <p>г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</p>
-        </div>
-        <a class="contacts__link button">Напишите нам</a>
-        <iframe src="" frameborder="0" class="contacts__location">
+
+        <!--
+
+      <iframe src="" frameborder="0" class="contacts__location">
         </iframe>
+         -->
+        <img class="footer__logo logo" src="https://via.placeholder.com/150x150" alt="Логотип">
+        <a class="contacts__link button">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -151,8 +163,8 @@
         <img class="footer__logo logo" src="https://via.placeholder.com/150x150" alt="Логотип">
       </a>
       <div class="footer__icons social">
+        <!--
         <ul class="social__list">
-
           <li class="social__item">
             <a href="#" class="social__link social__link--insta">
               <svg></svg>
@@ -178,7 +190,9 @@
 
         </svg>
       </a>
-    </div>
+       -->
+      </div>
+
   </footer>
 
 

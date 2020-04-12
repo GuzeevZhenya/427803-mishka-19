@@ -25,7 +25,7 @@
               <a href="catalog.html">Каталог товаров</a></li>
             <li class="site-list__item">
               <a>Вязание на заказ</a></li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--hidden">
               <a href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
@@ -34,10 +34,10 @@
             <li class="site-list__item">
               <a href="#"> Новые поступления </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--hidden">
               <a href="#"> Распродажа </a>
             </li>
-            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
+            <li class="site-list__item main-nav__delivery site-list__item--hidden">Бесплатная доставка по россии</li>
           </ul>
       </nav>
     </div>
@@ -55,10 +55,14 @@
           <fieldset>
             <legend class="form__title">Тип</legend>
             <div class="type__radio">
-              <input name="type-order" id="accessories" type="radio">
-              <label class=type__radio" for="accessories">Аксессуар для интерьера</label>
-              <input name="type-order" id="kids-toys" type="radio">
-              <label class="type__radio" for="kids-toys">Детская игрушка</label>
+              <div class="type__item">
+                <input name="type-order" id="accessories" type="radio">
+                <label class=type__radio" for="accessories">Аксессуар для интерьера</label>
+              </div>
+              <div class="type__item">
+                <input name="type-order" id="kids-toys" type="radio">
+                <label class="type__radio" for="kids-toys">Детская игрушка</label>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -70,11 +74,11 @@
             <legend class="form__title">Цвет</legend>
             <ul class="color__list">
               <li class="color__item">
-                <input name="color" id="white" type="checkbox">
+                <input name="color" id="white" type="checkbox" checked>
                 <label class="color__name" for="white">Белый</label>
               </li>
               <li class="color__item">
-                <input name="color" id="grey" type="checkbox">
+                <input name="color" id="grey" type="checkbox" checked>
                 <label class="color__name" for="grey">Серый</label>
               </li>
               <li class="color__item">
@@ -125,23 +129,29 @@
 
       <div class="form__contacts">
         <div class="form__telephone telephone">
-          <fieldset>
-            <legend class="form__title">
-              Тел:
-            </legend>
-            <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            <svg></svg>
-          </fieldset>
+          <div class="telephone__wrapper">
+            <fieldset>
+              <legend class="form__title">
+                Тел:
+              </legend>
+              <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <svg></svg>
+            </fieldset>
+          </div>
         </div>
         <div class="form__email email">
-          <fieldset>
-            <legend class="form__title">
-              E-mail
-            </legend>
-            <input name="email" id="email" type="text" placeholder="Ваш Email*">
-            <svg></svg>
-          </fieldset>
+          <div class="email__wrapper">
+            <fieldset>
+              <legend class="form__title">
+                E-mail
+              </legend>
+              <input name="email" id="email" type="text" placeholder="Ваш Email*">
+              <svg></svg>
+            </fieldset>
+          </div>
         </div>
+      </div>
+
 
       </div>
 
@@ -151,12 +161,11 @@
             <legend class="form__title">
               Доп
             </legend>
-
             <textarea class="additionally__textarea" name="" id="" cols=" 30" rows="10"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
-
         </div>
       </div>
+
       <div class="form__submit">
         <small class="form__required">* — Обязательные поля</small>
         <button type="submit" form="form__button button">Отправить заказ</button>

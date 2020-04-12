@@ -2,13 +2,28 @@
 
 .fio__title {}
 
-.fio__list {}
+.fio__wrapper {
+  @include wrapper;
+}
+
+.fio__list {
+  @include list-reset;
+}
 
 .fio__item {}
+
+.fio__item input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid $black;
+  height: 30px;
+  margin-bottom: 24px;
+}
 
 .fio__item label {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
+  display: block;
 }
 
 .fio__item ::placeholder {

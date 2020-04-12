@@ -28,7 +28,7 @@
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--hidden">
               <a href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
@@ -37,10 +37,10 @@
             <li class="site-list__item">
               <a href="#"> Новые поступления </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--hidden">
               <a href="#"> Распродажа </a>
             </li>
-            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
+            <li class="site-list__item main-nav__delivery site-list__item--hidden">Бесплатная доставка по россии</li>
           </ul>
         </div>
       </nav>
@@ -48,9 +48,9 @@
   </header>
 
   <main class="main">
-    <div class="main__wrapper">
-      <h1 class="main__title">Каталого товаров</h1>
-      <section class="catalog">
+    <h1 class="main__title">Каталого товаров</h1>
+    <section class="catalog">
+      <div class="catalog__wrapper">
         <div class="catalog__item">
           <picture>
             <a href="#"><img src="https://via.placeholder.com/150x150"></a>
@@ -122,20 +122,23 @@
           </div>
         </div>
 
-        <div class="catalog__video video">
+        <div class="catalog__video catalog__item video">
           <svg></svg>
           <h2 class="video__title">Процесс производства</h2>
-          <p class="video__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a href="form.html" class="video__link button">
-            Сделать заказ
-          </a>
+          <div class="video__info">
+            <p class="video__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a href="form.html" class="video__link button">
+              Сделать заказ
+            </a>
+          </div>
         </div>
         <picture>
 
         </picture>
-      </section>
+      </div>
+    </section>
     </div>
   </main>
 
@@ -176,15 +179,17 @@
   </footer>
 
   <form class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <p class="modal__description">Выберите размер:</p>
-    <input name="select-size" type="radio" id="s-size">
-    <label class="modal__size" for="s-size">s</label>
-    <input name="select-size" type="radio" id="m-size">
-    <label class="modal__size" for="m-size">m</label>
-    <input name="select-size" type="radio" id="l-size">
-    <label class="modal__size" for="l-size">l</label>
-    <button type="submit" class="modal__button button">Добавить</button>
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <input name="select-size" type="radio" id="s-size">
+      <label class="modal__size" for="s-size">s</label>
+      <input name="select-size" type="radio" id="m-size">
+      <label class="modal__size" for="m-size">m</label>
+      <input name="select-size" type="radio" id="l-size">
+      <label class="modal__size" for="l-size">l</label>
+      <button type="submit" class="modal__button button">Добавить</button>
+    </div>
   </form>
 
 
