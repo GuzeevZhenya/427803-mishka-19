@@ -1,9 +1,35 @@
+.about-us {
+    padding-top: 34px;
+}
+
+.about-us__wrapper {
+    @include wrapper;
+}
+
 .about-us__title {
-  @include font-text($OpenSans, 25px, 30px, 700);
-  color: $black;
+    @include font-text($OpenSans, 25px, 30px, 700);
+    color: $black;
+    margin: 0;
+    @media(min-width: $tablet-width) {
+        @include font-text($OpenSans, 43px, 50px, 700);
+    }
 }
 
 .about-us__description {
-  @include font-text($OpenSans, 17px, 20px, 700);
-  color: $black;
+    @include font-text($OpenSans, 17px, 20px, 700);
+    color: $black;
+    margin-top: 88px;
+    max-width: 251px;
+    @media(min-width: $tablet-width) {
+        @include font-text($OpenSans, 20px, 22px, 700);
+    }
+}
+
+.about-us__advantages {
+    @include list-reset;
+    @media(min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

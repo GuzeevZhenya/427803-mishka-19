@@ -1,6 +1,21 @@
 .form {}
 
+
+
+.form fieldset {
+  border: none;
+  border-top: 1px solid $seafoam-blue;
+  padding: 0;
+  margin: 0;
+  margin-top: 34px;
+
+}
+
 .form__title {
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $seafoam-blue;
+  border: none;
+  padding-right: 27px;
+  margin-bottom: 23px;
+
 }

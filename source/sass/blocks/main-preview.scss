@@ -1,14 +1,33 @@
-.main-preview {}
+.main-preview {
+    @media(min-width: $tablet-width) {
+        @include wrapper;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+.main-preview__item {
+    padding: 30px 0 30px 29px;
+    @media(min-width: $tablet-width) {
+        padding: 35px 0 34px 36px;
+        width: 50%;
+    }
+}
 
 .main-preview__interior-items {
-  background-color: $seafoam-blue;
+    background-color: $seafoam-blue;
 }
 
 .main-preview__kid-games {
-  background-color: $greeny-blue;
+    background-color: $greeny-blue;
 }
 
 .main-preview__title {
-  @include font-text($OpenSans, 19px, 24px, 700);
-  color: $white-three;
+    @include font-text($OpenSans, 19px, 24px, 700);
+    color: $white-three;
+    text-decoration: none;
+    @media(min-width: $tablet-width) {
+        @include font-text($OpenSans, 20px, 30px, 700);
+    }
 }

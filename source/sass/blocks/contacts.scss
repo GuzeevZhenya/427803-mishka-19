@@ -1,22 +1,83 @@
-.contacts {}
+.contacts {
+    padding-top: 44px;
+}
+
+.contacts__wrapper {
+    @include wrapper;
+}
 
 .contacts__title {
-  @include font-text($OpenSans, 18px, 30px, 700);
-  color: $black;
+    @include font-text($OpenSans, 18px, 30px, 700);
+    color: $black;
+    margin: 0;
+    margin-bottom: 35px;
+    @media(min-width: $tablet-width) {
+        @include font-text($OpenSans, 43px, 50px, 700);
+    }
+}
+
+.contacts__block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+    @media(min-width: $tablet-width) {
+        flex-direction: row;
+    }
+}
+
+.contacts__email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .contacts__email p {
-  @include font-text($OpenSans, 15px, 30px, 400);
+    @include font-text($OpenSans, 15px, 30px, 400);
+    margin: 0;
+    @media(min-width: $tablet-width) {
+        padding-right: 26px;
+    }
 }
 
 .contacts__email a {
-  @include font-text($OpenSans, 15px, 30px, 400);
+    @include font-text($OpenSans, 15px, 30px, 400);
+    color: $text;
+    width: 178px;
+    text-decoration: none;
+    position: relative;
+    @media(min-width: $tablet-width) {}
+}
+
+.contacts__email a::after {}
+
+.contacts__adress {
+    display: flex;
+    justify-content: space-between;
+    @media(min-width: $tablet-width) {
+        margin-left: 55px;
+    }
 }
 
 .contacts__adress p {
-  @include font-text($OpenSans, 15px, 30px, 400);
+    @include font-text($OpenSans, 15px, 30px, 400);
+    margin: 0;
+    text-align: left;
+    max-width: 178px;
+    @media(min-width: $tablet-width) {
+        padding-right: 26px;
+    }
 }
 
-.contacts__adress a {
-  @include font-text($OpenSans, 15px, 30px, 400);
+.contacts__adress span {
+    @include font-text($OpenSans, 15px, 30px, 400);
+    margin: 0;
+    text-align: left;
+    max-width: 178px;
+}
+
+.contacts__link {
+    margin: 39px 0;
+    @media(min-width: $tablet-width) {
+        margin: 0 auto;
+    }
 }
