@@ -11,7 +11,7 @@
 
 .reviews__wrapper {
     @include wrapper;
-    position: relative;
+    flex-wrap: wrap;
 }
 
 .reviews__title {
@@ -48,11 +48,11 @@
 }
 
 .reviews__email {
-    <<<<<<< HEAD @include font-text($OpenSans, 17px, 30px, 700);
+    @include font-text($OpenSans, 17px, 30px, 700);
     @include list-reset;
     text-decoration: none;
     color: $text;
-    =======@include font-text($OpenSans, 17px, 30px, 700);
+    @include font-text($OpenSans, 17px, 30px, 700);
     @include list-reset;
     text-decoration: none;
     color: $text;
@@ -73,7 +73,6 @@
 
 .reviews__link--hidden {
     display: none;
-    >>>>>>>a03930c132cf50110c0d4cab3421c7ed202ac366
 }
 
 .reviews__buttons {
@@ -96,9 +95,10 @@
 .reviews__link-mob--hidden {
     display: none;
     @media(min-width: $tablet-width) {
-        display: inline-block;
+        // display: inline-block;
+        display: flex;
         margin: 0;
-        width: 175px;
+        max-width: 175px;
         height: 52px;
         right: 52px;
         top: 0;
