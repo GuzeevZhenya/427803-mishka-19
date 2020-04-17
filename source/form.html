@@ -52,56 +52,63 @@
     <form class="form" action="">
       <div class="form__type type">
         <div class="type__wrapper">
-          <fieldset>
-            <legend class="form__title">Тип</legend>
-            <div class="type__radio">
-              <input name="type-order" id="accessories" type="radio">
-              <label class=type__radio" for="accessories">Аксессуар для интерьера</label>
-              <input name="type-order" id="kids-toys" type="radio">
-              <label class="type__radio" for="kids-toys">Детская игрушка</label>
-            </div>
-          </fieldset>
+          <div class="type__container">
+            <fieldset>
+              <div class="type__legend">
+                <legend class="form__title">Тип</legend>
+              </div>
+              <div class="type__radio">
+                <input name="type-order" id="accessories" type="radio">
+                <label class=type__radio" for="accessories">Аксессуар для интерьера</label>
+                <input name="type-order" id="kids-toys" type="radio">
+                <label class="type__radio" for="kids-toys">Детская игрушка</label>
+              </div>
+            </fieldset>
+          </div>
         </div>
       </div>
 
       <div class="form__color color">
         <div class="color__wrapper">
           <fieldset>
-            <legend class="form__title">Цвет</legend>
-            <ul class="color__list">
-              <li class="color__item">
-                <input name="color" id="white" type="checkbox">
-                <label class="color__name" for="white">Белый</label>
-              </li>
-              <li class="color__item">
-                <input name="color" id="grey" type="checkbox">
-                <label class="color__name" for="grey">Серый</label>
-              </li>
-              <li class="color__item">
-                <input name="color" id="tiffany" type="checkbox">
-                <label class="color__name" for="tiffany">«Тиффани»</label>
-              </li>
-              <li class="color__item">
-                <input name="color" id="black" type="checkbox">
-                <label class="color__name" for="black">Черный</label>
-              </li>
-              <li class="color__item">
-                <input name="color" id="pink" type="checkbox">
-                <label class="color__name" for="pink">Розовый</label>
-              </li>
-              <li class="color__item">
-                <input name="color" id="orange" type="checkbox">
-                <label class="color__name" for="orange">Оранжевый</label>
-              </li>
-            </ul>
+            <div class="color__container">
+              <legend class="form__title">Цвет</legend>
+              <ul class="color__list">
+                <li class="color__item">
+                  <input name="color" id="white" type="checkbox">
+                  <label class="color__name" for="white">Белый</label>
+                </li>
+                <li class="color__item">
+                  <input name="color" id="grey" type="checkbox">
+                  <label class="color__name" for="grey">Серый</label>
+                </li>
+                <li class="color__item">
+                  <input name="color" id="tiffany" type="checkbox">
+                  <label class="color__name" for="tiffany">«Тиффани»</label>
+                </li>
+                <li class="color__item">
+                  <input name="color" id="black" type="checkbox">
+                  <label class="color__name" for="black">Черный</label>
+                </li>
+                <li class="color__item">
+                  <input name="color" id="pink" type="checkbox">
+                  <label class="color__name" for="pink">Розовый</label>
+                </li>
+                <li class="color__item">
+                  <input name="color" id="orange" type="checkbox">
+                  <label class="color__name" for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
       </div>
 
       <div class="form__fio fio">
         <div class="fio__wrapper">
-          <div class="fio__container">
-            <fieldset>
+
+          <fieldset>
+            <div class="fio__container">
               <legend class="form__title">
                 ФИО
               </legend>
@@ -120,29 +127,39 @@
                   <input name="fio" id="fio-patronymic" type="text" placeholder="Отчество, если желаете">
                 </li>
               </ul>
-            </fieldset>
-          </div>
+            </div>
+          </fieldset>
+
         </div>
       </div>
 
       <div class="form__contacts">
         <div class="form__telephone telephone">
-          <fieldset>
-            <legend class="form__title">
-              Тел:
-            </legend>
-            <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            <svg></svg>
-          </fieldset>
+          <div class="telephone__wrapper">
+            <fieldset>
+              <div class="telephone__container">
+                <legend class="form__title">
+                  Тел:
+                </legend>
+                <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg></svg>
+              </div>
+            </fieldset>
+          </div>
         </div>
         <div class="form__email email">
-          <fieldset>
-            <legend class="form__title">
-              E-mail
-            </legend>
-            <input name="email" id="email" type="text" placeholder="Ваш Email*">
-            <svg></svg>
-          </fieldset>
+          <div class="email__wrapper">
+            <fieldset>
+              <div class="email__container">
+                <legend class="form__title">
+                  E-mail
+                </legend>
+                <input name="email" id="email" type="text" placeholder="Ваш Email*">
+                <svg></svg>
+              </div>
+            </fieldset>
+          </div>
+
         </div>
 
       </div>

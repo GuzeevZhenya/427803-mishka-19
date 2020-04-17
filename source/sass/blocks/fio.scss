@@ -8,9 +8,17 @@
 
 .fio__list {
     @include list-reset;
+    @media(min-width: $tablet-width) {
+       width: 500px;
+    }
 }
 
-.fio__item {}
+.fio__item {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    text-align: center;
+  }
+}
 
 .fio__item input {
     border: none;
@@ -18,12 +26,18 @@
     border-bottom: 1px solid $black;
     height: 30px;
     margin-bottom: 24px;
+
 }
 
 .fio__item label {
     @include font-text($OpenSans, 17px, 18px, 700);
     color: $black;
     display: block;
+    @media(min-width: $tablet-width) {
+      padding-top: 5px;
+     margin-right: 25px;
+    }
+
 }
 
 .fio__item ::placeholder {
@@ -35,6 +49,7 @@
     @media(min-width: $tablet-width) {
       width: 100%;
         display: flex;
+        justify-content: space-between;
 
     }
 }
