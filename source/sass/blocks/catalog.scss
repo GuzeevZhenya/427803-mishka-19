@@ -45,6 +45,12 @@
     }
 }
 
+.catalog__item-container{
+  @media(min-width: $tablet-width) {
+
+  }
+}
+
 .catalog__item-title {
     @include font-text($OpenSans, 17px, 24px, 700);
     color: $black;

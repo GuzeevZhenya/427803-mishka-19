@@ -31,8 +31,10 @@
     color: $gray-placeholder;
 }
 
-.fio__box {
+.fio__container {
     @media(min-width: $tablet-width) {
+      width: 100%;
         display: flex;
+
     }
 }
