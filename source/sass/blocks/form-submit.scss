@@ -1,5 +1,13 @@
 .form__submit {
   text-align: center;
+  @include wrapper;
+
+  @media(min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+  }
 }
 
 .submit__wrapper {

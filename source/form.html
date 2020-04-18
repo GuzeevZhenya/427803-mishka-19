@@ -52,19 +52,26 @@
     <form class="form" action="">
       <div class="form__type type">
         <div class="type__wrapper">
-          <div class="type__container">
-            <fieldset>
+
+          <fieldset>
+            <div class="type__container">
               <div class="type__legend">
                 <legend class="form__title">Тип</legend>
               </div>
-              <div class="type__radio">
-                <input name="type-order" id="accessories" type="radio">
-                <label class=type__radio" for="accessories">Аксессуар для интерьера</label>
-                <input name="type-order" id="kids-toys" type="radio">
-                <label class="type__radio" for="kids-toys">Детская игрушка</label>
-              </div>
-            </fieldset>
-          </div>
+              <ul class="type__list">
+                <li class="type__item">
+                  <input name="type-order" id="accessories" type="radio">
+                  <label class="type__radio" for="accessories">Аксессуар для интерьера</label>
+                </li>
+                <li class="type__item">
+                  <input name="type-order" id="kids-toys" type="radio">
+                  <label class="type__radio" for="kids-toys">Детская игрушка</label>
+                </li>
+
+              </ul>
+            </div>
+          </fieldset>
+
         </div>
       </div>
 
@@ -142,7 +149,7 @@
                   Тел:
                 </legend>
                 <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <svg></svg>
+                <!--  <svg></svg>-->
               </div>
             </fieldset>
           </div>
@@ -155,7 +162,7 @@
                   E-mail
                 </legend>
                 <input name="email" id="email" type="text" placeholder="Ваш Email*">
-                <svg></svg>
+                <!--  <svg></svg>-->
               </div>
             </fieldset>
           </div>
@@ -167,20 +174,24 @@
       <div class="form__additionally additionally">
         <div class="additionally__wrapper">
           <fieldset>
-            <legend class="form__title">
-              Доп
-            </legend>
+            <div class="additionally__container">
+              <legend class="form__title">
+                Доп
+              </legend>
 
-            <textarea class="additionally__textarea" name="" id="" cols=" 30" rows="10"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="additionally__textarea" name="" id="" cols=" 30" rows="10"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
 
         </div>
-      </div>
-      <div class="form__submit">
-        <small class="form__required">* — Обязательные поля</small>
-        <button type="submit" form="form__button button">Отправить заказ</button>
-      </div>
-      </fieldset>
+        <div class="form__submit">
+
+          <small class="form__required">*Поля обязательны для заполнения</small>
+          <button type="submit" class="form__button button">Отправить заказ</button>
+
+        </div>
+
     </form>
   </main>
 
@@ -194,27 +205,25 @@
 
           <li class="social__item">
             <a href="#" class="social__link social__link--insta">
-              <svg></svg>
+              <!--  <svg></svg>-->
             </a>
           </li>
 
           <li class="social__item">
             <a href="#" class="social__link social__link--facebook">
-              <svg></svg>
+              <!--  <svg></svg>-->
             </a>
           </li>
 
           <li class="social__item">
             <a href="#" class="social__link social__link--twitter">
-              <svg></svg>
+              <!--  <svg></svg>-->
             </a>
           </li>
         </ul>
       </div>
       <a class="footer__copyright copyright" href="https://up.htmlacademy.ru/adaptive/19">Разработано</a>
-      <svg>
-
-      </svg>
+      <!--  <svg></svg>-->
     </div>
   </footer>
 </body>

@@ -1,29 +1,51 @@
 .type {}
 
+/*
 .type fieldset {
-    border: none;
-    border-top: 1px solid $seafoam-blue;
-    padding: 0;
+  border: none;
+  border-top: 1px solid $seafoam-blue;
+  padding: 0;
 }
-
+*/
 .type__wrapper {
-    @include wrapper;
+  @include wrapper;
 }
 
 .type__title {
-    @include font-text($OpenSans, 17px, 16px, 700);
-    color: $seafoam-blue;
+  @include font-text($OpenSans, 17px, 16px, 700);
+  color: $seafoam-blue;
 }
 
+
 .type__radio {
-    @include font-text($OpenSans, 17px, 18px, 700);
-    color: $black;
+  @include font-text($OpenSans, 17px, 18px, 700);
+  color: $black;
+
+  @media(min-width: $tablet-width) {
+    @include font-text($OpenSans, 19px, 18px, 700);
+  }
+}
+
+.type__list {
+  @include list-reset;
 }
 
 .type__item {
+  @media(min-width: $tablet-width) {
+    width: 500px;
     margin-bottom: 18px;
+  }
 }
 
 .type__item:last-child {
-    margin: 0;
+  margin: 0;
+}
+
+.type__container {
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
 }

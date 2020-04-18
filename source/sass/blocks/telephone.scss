@@ -2,10 +2,14 @@
 
 .telephone input {
   border: none;
-  max-width: 260px;
+  width: 100%;
   border-bottom: 1px solid $black;
   height: 30px;
   margin-bottom: 24px;
+
+  @media(min-width:$tablet-width) {
+    width: 500px;
+  }
 }
 
 .telephone__wrapper {
@@ -15,4 +19,12 @@
 .telephone ::placeholder {
   @include font-text($OpenSans, 19px, 18px, 400);
   color: $gray-placeholder;
+}
+
+.telephone__container {
+  @media(min-width:$tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
