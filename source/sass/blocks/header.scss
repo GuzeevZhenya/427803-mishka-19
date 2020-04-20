@@ -1,3 +1,13 @@
 .header__wrapper {
   @include wrapper;
+  position: relative;
+}
+
+.header__logo img{
+  padding: 22px 0;
+
+  @media(min-width: $tablet-width) {
+
+
+  }
 }

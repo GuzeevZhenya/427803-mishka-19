@@ -2,7 +2,7 @@
 
 .form fieldset {
   border: none;
-  border-top: 1px solid $seafoam-blue;
+
   padding: 0;
   margin: 0;
   margin-top: 34px;
@@ -18,4 +18,18 @@
   border: none;
   padding-right: 27px;
   margin-bottom: 23px;
+  position: relative;
+  width: 100%;
 }
+
+
+.form__title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #63d1bb;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+

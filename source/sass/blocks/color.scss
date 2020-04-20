@@ -1,7 +1,5 @@
 .color {
-  @media(min-width: $tablet-width) {
-    background-color: $white;
-  }
+
 }
 
 .color__wrapper {
@@ -10,35 +8,45 @@
 
 .color__list {
   @include list-reset;
-
-  @media(min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-  }
 }
 
 .color__item {
-  @media(min-width: $tablet-width) {
-    width: 200px;
-  }
 }
 
 .color__name {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
   padding-left: 18px;
-
-  @media(min-width: $tablet-width) {
-    @include font-text($OpenSans, 17px, 18px, 700);
-  }
 }
 
-.color__container {
-  @media(min-width: $tablet-width) {
+.color__container {}
+
+
+@media(min-width: $tablet-width) {
+  .color{
+    @media(min-width: $tablet-width) {
+      background-color: $white;
+    }
+  }
+
+  .color__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .color__item{
+    width: 200px;
+  }
+
+  .color__name{
+    @include font-text($OpenSans, 17px, 18px, 700);
+  }
+  .color__container{
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
+
+
 }
