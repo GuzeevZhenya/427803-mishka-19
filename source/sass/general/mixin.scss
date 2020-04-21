@@ -4,13 +4,13 @@
     max-width: 320px;
     @media (min-width: $tablet-width) {
         margin: 0 auto;
-        padding: 0 52px;
-        max-width: 772px;
+        padding: 0 51px;
+        max-width: 768px;
     }
     @media (min-width: $desktop-width) {
         margin: 0 auto;
         padding: 0 40px;
-        max-width: 1300px;
+        max-width: 1150px;
     }
 }
 
@@ -26,3 +26,4 @@
     line-height: $line-height;
     font-weight: $font-weight;
 }
+

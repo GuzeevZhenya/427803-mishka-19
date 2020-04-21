@@ -11,12 +11,53 @@
 }
 
 .color__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.color__input{
+  appearance: none;
+  position: absolute;
 }
 
 .color__name {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
-  padding-left: 18px;
+
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.color__name::before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 39px;
+  border: 2px solid $text;
+  background-color: #ffffff;
+  margin-right: 24px;
+}
+
+.color__name::after{
+  content: "";
+  display: block;
+  width: 22px;
+  height: 16px;
+
+  background: url("") no-repeat;
+  background-size: 40px 49px;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  z-index: 2;
+  opacity: 0;
+  background-color: red;
+}
+
+.color__input:checked + .color__name::after{
+ opacity: 1;
 }
 
 .color__container {}

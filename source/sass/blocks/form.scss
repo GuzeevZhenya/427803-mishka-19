@@ -20,6 +20,9 @@
   margin-bottom: 23px;
   position: relative;
   width: 100%;
+
+  background-color: #ffffff;
+  outline: auto;
 }
 
 
@@ -31,5 +34,13 @@
   position: absolute;
   right: 0;
   top: 7px;
+  z-index: -1;
 }
 
+
+@media(min-width: $tablet-width) {
+  .form__title{
+    width: 0;
+    background-color: fff;
+  }
+}

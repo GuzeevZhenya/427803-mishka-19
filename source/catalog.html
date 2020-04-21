@@ -131,9 +131,14 @@
         </div>
 
         <div class="catalog__video catalog__item video">
-          <svg></svg>
-          <h2 class="video__title">Процесс производства</h2>
+         <!-- <svg></svg>-->
+         <picture>
+          <a href="#">
+            <img src="https://via.placeholder.com/682x455">
+          </a>
+        </picture>
           <div class="video__info">
+            <h2 class="video__title">Процесс производства</h2>
             <p class="video__description">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
@@ -190,13 +195,16 @@
     <div class="modal__wrapper">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__description">Выберите размер:</p>
-      <input name="select-size" type="radio" id="s-size">
-      <label class="modal__size" for="s-size">s</label>
-      <input name="select-size" type="radio" id="m-size">
-      <label class="modal__size" for="m-size">m</label>
-      <input name="select-size" type="radio" id="l-size">
-      <label class="modal__size" for="l-size">l</label>
+      <div class="select__items">
+        <input name="select-size" type="radio" id="s-size">
+        <label class="modal__size" for="s-size">s</label>
+        <input name="select-size" type="radio" id="m-size">
+        <label class="modal__size" for="m-size">m</label>
+        <input name="select-size" type="radio" id="l-size">
+        <label class="modal__size" for="l-size">l</label>
+      </div>
       <button type="submit" class="modal__button button">Добавить</button>
+
     </div>
   </form>
 

@@ -7,7 +7,16 @@
 }
 
 .modal__wrapper {
-  @include wrapper;
+  padding: 0 30px;
+}
+
+.modal input{
+  display: none;
+ }
+
+.select__items{
+  display: flex;
+ justify-content: space-between;
 }
 
 .modal__title {
@@ -16,19 +25,24 @@
   max-width: 150px;
   margin: 0 auto;
   text-transform: uppercase;
-
 }
 
 .modal__description {
   @include font-text($OpenSans, 15px, 30px, 400);
   color: $text;
-  margin: 25px 0 23px 0;
+
 }
 
 .modal__size {
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $text;
   text-transform: uppercase;
+  width: 82px;
+  height: 52px;
+  border: 2px solid $white-two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__button {
@@ -38,4 +52,29 @@
   min-width: 100%;
   margin-top: 31px;
   border: none;
+}
+
+@media(min-width: $tablet-width) {
+   .modal{
+      width: 566px;
+      margin: 0 auto;
+  }
+  .modal__title{
+    @include font-text($OpenSans, 30px, 57px, 700);
+    margin: 0;
+    max-width: 100%;
+ }
+  .modal__wrapper{
+    padding: 0 105px;
+ }
+
+ .modal__size{
+  width: 112px;
+  height: 52px;
+ }
+
+ .modal__size:active,
+ .modal__size:focus{
+   border-color:$seafoam-blue ;
+ }
 }
