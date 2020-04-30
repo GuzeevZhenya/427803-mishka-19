@@ -3,53 +3,63 @@
 .fio__title {}
 
 .fio__wrapper {
-    @include wrapper;
+  @include wrapper;
 }
 
 .fio__list {
-    @include list-reset;
-    @media(min-width: $tablet-width) {
-       width: 500px;
-    }
+  @include list-reset;
 }
 
-.fio__item {
-  @media(min-width: $tablet-width) {
-    display: flex;
-    text-align: center;
-  }
-}
+.fio__item {}
 
 .fio__item input {
-    border: none;
-    width: 100%;
-    border-bottom: 1px solid $black;
-    height: 30px;
-    margin-bottom: 24px;
-
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid $black;
+  height: 30px;
+  margin-bottom: 24px;
 }
 
 .fio__item label {
-    @include font-text($OpenSans, 17px, 18px, 700);
-    color: $black;
-    display: block;
-    @media(min-width: $tablet-width) {
-      padding-top: 5px;
-     margin-right: 25px;
-    }
-
+  @include font-text($OpenSans, 17px, 18px, 700);
+  color: $black;
+  display: block;
 }
 
 .fio__item ::placeholder {
-    @include font-text($OpenSans, 17px, 18px, 400);
-    color: $gray-placeholder;
+  @include font-text($OpenSans, 17px, 18px, 400);
+  color: $gray-placeholder;
+  padding-left: 18px;
 }
 
-.fio__container {
+.fio__container {}
+
+@media(min-width: $tablet-width) {
+  .fio__list {
+    width: 500px;
+  }
+
+  .fio__item {
+    display: flex;
+    text-align: center;
+  }
+
+  .fio__item label {
+    padding-top: 5px;
+    margin-right: 25px;
+  }
+
+  .fio__item input {
+    height: 52px;
+  }
+
+
+  .fio__container {
     @media(min-width: $tablet-width) {
       width: 100%;
-        display: flex;
-        justify-content: space-between;
-
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
     }
+  }
 }

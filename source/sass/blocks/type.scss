@@ -20,10 +20,47 @@
 .type__radio {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
+  padding-left: 66px;
+  position: relative;
+  padding-top: 11px;
+
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 19px, 18px, 700);
   }
+}
+
+.type__radio::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid $text;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.type__radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $seafoam-blue-radio;
+  z-index: 2;
+  opacity: 0;
+}
+
+.type__item input:checked+.type__radio::after {
+  opacity: 1;
 }
 
 .type__list {
@@ -31,16 +68,26 @@
 }
 
 .type__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  & input {
+    appearance: none;
+    position: absolute;
+  }
+
   @media(min-width: $tablet-width) {
     width: 500px;
     margin-bottom: 18px;
   }
 }
 
+/*
 .type__item:last-child {
   margin: 0;
 }
-
+*/
 .type__container {
   @media(min-width: $tablet-width) {
     width: 100%;

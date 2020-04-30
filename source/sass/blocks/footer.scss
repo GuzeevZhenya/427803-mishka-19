@@ -4,8 +4,28 @@
 
 .footer__wrapper {
   @include wrapper;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 31px;
 }
 
 .footer__logo {
   display: none;
+}
+
+
+@media(min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
+    padding-bottom: 54px;
+  }
+
+  .footer__logo {
+    @media(min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }

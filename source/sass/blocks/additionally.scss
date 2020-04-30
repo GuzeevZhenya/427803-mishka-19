@@ -1,4 +1,6 @@
-.additionally {}
+.additionally {
+  padding-bottom: 55px;
+}
 
 .additionally__wrapper {
   @include wrapper;
@@ -25,13 +27,13 @@
 
 
 
-@media(min-width:$tablet-width){
-  .additionally__textarea{
+@media(min-width:$tablet-width) {
+  .additionally__textarea {
     max-width: 500px;
     margin-bottom: 53px;
   }
 
-  .additionally__textarea::placeholder{
-      max-width: 100%;
+  .additionally__textarea::placeholder {
+    max-width: 100%;
   }
 }

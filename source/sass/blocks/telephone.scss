@@ -6,10 +6,7 @@
   border-bottom: 1px solid $black;
   height: 30px;
   margin-bottom: 24px;
-
-  @media(min-width:$tablet-width) {
-    width: 500px;
-  }
+  background-color: $white;
 }
 
 .telephone__wrapper {
@@ -22,9 +19,31 @@
 }
 
 .telephone__container {
-  @media(min-width:$tablet-width) {
+  position: relative;
+
+  & svg {
+    position: absolute;
+    top: 37px;
+    right: 0;
+  }
+}
+
+/*Планшет версия*/
+
+@media(min-width:$tablet-width) {
+  .telephone input {
+    width: 500px;
+
+  }
+
+  .telephone__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    & svg {
+      top: -10px;
+
+    }
   }
 }
