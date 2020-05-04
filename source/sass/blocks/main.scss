@@ -1,12 +1,38 @@
+.main__wrapper {
+  @include wrapper;
+}
+
 .main-form {}
 
 .main__title {
   @include font-text($OpenSans, 27px, 30px, 700);
+  margin: 0;
   color: $black;
   background-color: $white;
+  padding-top: 76px;
+  padding-bottom: 74px;
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
+    @include font-text($OpenSans, 43px, 50px, 700);
+  }
 }
 
 .main__description {
   @include font-text($OpenSans, 13px, 24px, 400);
+  @include wrapper;
   color: $text;
+
+  padding-top: 29px;
+
+  @media(min-width: $tablet-width) {
+    // @include font-text($OpenSans, 17px, 24px, 400);
+
+
+
+    padding: 0;
+    padding-top: 80px;
+
+
+  }
 }

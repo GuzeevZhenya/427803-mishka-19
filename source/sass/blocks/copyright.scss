@@ -1,4 +1,12 @@
 .copyright {
   @include font-text($OpenSans, 19px, 18px, 700);
+  text-decoration: none;
   color: $black;
+  display: block;
+  padding-top: 25px;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 0;
+    padding-right: 30px;
+  }
 }
