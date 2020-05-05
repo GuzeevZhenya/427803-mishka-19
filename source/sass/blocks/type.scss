@@ -9,7 +9,11 @@
 */
 .type__wrapper {
   @include wrapper;
+<<<<<<< HEAD
 
+=======
+  overflow-x: hidden;
+>>>>>>> 7305035b3ed323e9b6e8e50a15486274d04e3b4a
 }
 
 .type__title {

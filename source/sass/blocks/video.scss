@@ -6,8 +6,7 @@
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 0 42px;
-
+    padding-top: 0;
   }
 }
 
@@ -24,7 +23,12 @@
     padding-bottom: 0;
     margin-left: 42px;
     order: 2;
-
+  }
+  @media(min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-left: 79px;
+    margin: 0;
+    max-width: 150px;
   }
 }
 
@@ -35,7 +39,11 @@
 
   @media(min-width: $tablet-width) {
     top: 39px;
-    left: -13px;
+    left: 0;
+  }
+  @media(min-width: $desktop-width) {
+   left: 78px;
+   top: 0;
   }
 }
 
@@ -45,24 +53,18 @@
   line-height: 0;
 }
 
-.video__info {
-  padding: 0 27px;
-
-  @media(min-width: $tablet-width) {
-    order: 3;
-  }
-}
-
 .video__description {
   @include font-text($OpenSans, 13px, 24px, 400);
   color: $text;
   margin: 34px 0 29px 0;
+  padding: 0 34px;
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 15px, 30px, 400);
-
     margin-bottom: 40px;
     margin-top: 41px;
+    padding: 0 40px;
+    order: 3;
   }
 }
 
@@ -70,22 +72,40 @@
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $text;
   max-width: 192px;
+  margin: 0 auto;
 
   @media(min-width: $tablet-width) {
-    max-width: 100%;
+    max-width: 584px;
+    width: 100%;
+    order: 4;
   }
 }
 
 
-
-
 @media(min-width: $desktop-width) {
   .video {
+    display: flex;
     max-width: 100%;
     padding: 0;
-    display: flex;
-    flex-direction: row;
     min-height: 455px;
+    position: relative;
+    padding-left: 680px;
+    justify-content: flex-start;
+    padding-top: 47px;
+    padding-bottom: 60px;
   }
 
+  .video__image {
+    max-width: 682px;
+    min-height: 455px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .video__link {
+    max-width: 230px;
+  }
+  .video__description{
+    padding-left: 78px;
+  }
 }
