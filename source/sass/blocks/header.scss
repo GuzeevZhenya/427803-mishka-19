@@ -3,11 +3,12 @@
   position: relative;
 }
 
-.header__logo img{
-  padding: 22px 0;
-
-  @media(min-width: $tablet-width) {
 
 
-  }
+.header__logo img {
+  padding: 12px 0;
+  margin-left: 86px;
+
+
+  @media(min-width: $tablet-width) {}
 }
