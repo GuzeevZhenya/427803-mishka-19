@@ -20,6 +20,7 @@
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14"
           xml:space="preserve">
@@ -65,8 +66,6 @@
           <div class="main-preview__item main-preview__interior-items">
             <a class="main-preview__title" href="#">
               Предметы интерьера
-
-
               <svg version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px"
                 viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411"
@@ -125,8 +124,11 @@
             <dt class="properties__value properties__value--size">15 см</dt>
           </dl>
         </div>
+
         <picture>
-          <img src="img/triple-set-mobile@1x.jpg" alt="Картинка товара">
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные двух цветов корзинки">
         </picture>
         <span class="product-list__price">Цена:990 руб.</span>
         <a href="#" class="product-list__link button">Заказать</a>
@@ -277,11 +279,11 @@
           </div>
         </div>
 
-        <!--
-
-      <iframe src="" frameborder="0" class="contacts__location">
-        </iframe>
-         -->
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+        </picture>
 
         <a class="contacts__link button">Напишите нам</a>
       </div>
