@@ -47,7 +47,7 @@ gulp.task("images", function(){
     imagemin.mozjpeg({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 //Формат для создания файла .webp
@@ -70,7 +70,7 @@ gulp.task("sprite",function(){
 //Запуск сервера
 gulp.task("server", function() {
     server.init({
-        server: "source/",  //путь до папки
+        server: "build/",  //путь до папки
         notify: false,
         open: true,
         cors: true,
