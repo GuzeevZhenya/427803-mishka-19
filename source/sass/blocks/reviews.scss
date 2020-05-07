@@ -80,6 +80,7 @@
   justify-content: space-around;
   position: relative;
 
+
   @media(min-width: $tablet-width) {
     padding-right: 107px;
     border: none;
@@ -101,12 +102,23 @@
 
 }
 
+.reviews__button {
+  border: none;
+}
+
+.reviews__line {
+  border-left: 1px solid $white-two;
+  height: 100%;
+}
+
+
 .reviews__button--next svg {
   background-color: #ffffff;
   border: none;
   position: absolute;
   top: 12px;
   right: 38px;
+
 
   @media(min-width: $tablet-width) {
     transform: rotate(180deg);

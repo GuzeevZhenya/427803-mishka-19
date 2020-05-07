@@ -41,3 +41,11 @@
   }
 
 }
+
+.site-list__link--out {
+  display: none;
+
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
+}
