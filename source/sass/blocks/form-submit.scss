@@ -1,6 +1,27 @@
-.form__submit {}
+.form__submit {
+  text-align: center;
+  @include wrapper;
 
-.form__submit small {
+  @media(min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+  }
+}
+
+.submit__wrapper {
+  @include wrapper;
+}
+
+.form__required {
   @include font-text($OpenSans, 14px, 16px, 400);
+  display: block;
   color: $text;
+  margin: 18px 0 31px 0;
+}
+
+.form__button {
+  width: 100%;
+  background-color: $white-three;
 }
