@@ -1,14 +1,13 @@
 .main-nav {
   background-color: $white-three;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__wrapper {}
 
-
 .main-nav__delivery {
-  font-size: 15px;
-  line-height: 24px;
+  @include font-text($OpenSans, 15px, 24px, 400);
   color: $text;
 }
 
@@ -18,7 +17,25 @@
   top: 22px;
   background-color: #ffffff;
   border: none;
+}
+
+@media(min-width:$tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__delivery {
+    @include font-text($OpenSans, 15px, 24px, 400);
+    right: 52px;
+  }
+}
 
 
-
+@media(min-width: $desktop-width) {
+  .main-nav__delivery {
+    position: absolute;
+    display: none;
+    bottom: -40px;
+    right: 50px;
+  }
 }

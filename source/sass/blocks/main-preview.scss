@@ -64,9 +64,6 @@
 }
 
 @media(min-width: $tablet-width) {
-
-
-
   .main-preview__title {
     @include font-text($OpenSans, 20px, 30px, 700);
 

@@ -9,6 +9,24 @@
   padding: 12px 0;
   margin-left: 86px;
 
+}
 
-  @media(min-width: $tablet-width) {}
+@media(min-width: $tablet-width) {
+  .header {
+    border-bottom: 1px solid $white-two;
+  }
+
+  .header__logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}
+
+@media(min-width: $desktop-width) {
+  .header__logo img {
+    top: -10px;
+    left: 450px;
+  }
 }

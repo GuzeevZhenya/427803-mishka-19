@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mishka</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -14,31 +14,48 @@
     <div class="header__wrapper">
       <a href="index.html" class="header__logo">
         <picture>
-          <img src="https://via.placeholder.com/150x150" alt="Логотип сайта" class="header__logo-image logo">
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Мишка">
         </picture>
       </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14"
+          xml:space="preserve">
+          <rect fill="#231F20" width="19.958" height="2" />
+          <rect y="6" fill="#231F20" width="19.958" height="2" />
+          <rect y="12" fill="#231F20" width="19.958" height="2" />
+        </svg>
+      </button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item">
-              <a>Вязание на заказ</a></li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
+            <li class="site-list__item site-list__bottom site-list__catalog-desktop">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item site-list__bottom site-list__bottom-center">
+              <a href="form.html" class="site-list__link" href="form.html">Вязание на заказ</a></li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Корзина:пока пуста</a>
+            <li class="site-list__item site-list__item--basket-tablet">
+              <a class="site-list__link" href="#">Корзина:пока пуста</a>
             </li>
-            <li class="site-list__item">
-              <a href="#"> Новые поступления </a>
+            <li class="site-list__item site-list__link--tablet site-list__link--out site-list__desktop-bottom">
+              <a class="site-list__link" href="#"> Новые поступления </a>
             </li>
-            <li class="site-list__item">
-              <a href="#"> Распродажа </a>
+            <li
+              class="site-list__item site-list__link--out site-list__link--out-tablet site-list__desktop-bottom site-list__desktop-middle">
+              <a class="site-list__link" href="#"> Распродажа </a>
             </li>
-            <li class="site-list__item main-nav__delivery">Бесплатная доставка по россии</li>
+            <li
+              class="site-list__item site-list__link--out site-list__bottom main-nav__delivery site-list__desktop-bottom">
+              Бесплатная доставка
+              по
+              россии</li>
           </ul>
+        </div>
       </nav>
     </div>
   </header>
