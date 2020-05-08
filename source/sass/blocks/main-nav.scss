@@ -1,6 +1,7 @@
 .main-nav {
   background-color: $white-three;
-
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__wrapper {}
@@ -18,7 +19,10 @@
   top: 22px;
   background-color: #ffffff;
   border: none;
+}
 
-
-
+@media(min-width:$tablet-width){
+  .main-nav__toggle{
+    display: none;
+  }
 }

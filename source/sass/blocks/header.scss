@@ -9,6 +9,12 @@
   padding: 12px 0;
   margin-left: 86px;
 
-
-  @media(min-width: $tablet-width) {}
 }
+  @media(min-width: $tablet-width) {
+    .header__logo img{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
