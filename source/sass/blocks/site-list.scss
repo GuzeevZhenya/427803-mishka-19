@@ -2,12 +2,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-
-  @media(min-width: $tablet-width) {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 .site-list__item {
@@ -22,60 +16,116 @@
     text-decoration: none;
     color: $black;
   }
-
-  /*  &--hidden {
-        display: none;
-
-    }
-    */
 }
 
 .site-list__item:first-child {
   border-top: 1px solid $white-two;
 }
 
-.site-list__item--search {
-
-  @media(min-width: $tablet-width) {
-    max-width: 88px;
-    font-size: 0;
-    display: block;
-    border-left: 1px solid $text;
-    border-right: 1px solid $text;
-    width: 82px;
-  }
-}
-
 .site-list__link--out {
   display: none;
-  @media(min-width: $tablet-width) {
-    display: block;
-  }
 }
 
 
 @media(min-width: $tablet-width) {
+  .site-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
 
-  .site-list__item:first-child{
+  .site-list__item:first-child {
     border-top: none;
   }
-  .site-list__link--tablet{
+
+  .site-list__link--tablet {
     width: 322px;
     font-size: 0;
     line-height: 0;
     order: -1;
   }
-  .site-list__bottom{
+
+  .site-list__bottom {
     position: absolute;
-    bottom: -54px;
+    bottom: -70px;
     border: none;
   }
 
-  .site-list__link--out-tablet{
+  .site-list__link--out-tablet {
     display: none;
   }
-  .site-list__item--basket-tablet{
+
+  .site-list__item--basket-tablet {
     width: 316px;
     text-align: right;
+    padding-right: 50px;
+  }
+
+  .site-list__item--search {
+    max-width: 88px;
+    font-size: 0;
+    display: block;
+    border-left: 1px solid $white-two;
+    border-right: 1px solid $white-two;
+    width: 82px;
+  }
+
+  .site-list__bottom-center {
+    left: 174px;
+  }
+
+  .site-list__link--out {
+    display: block;
+  }
+
+  .site-list__desktop-middle {
+    display: none;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .site-list__bottom {
+    display: block;
+    position: initial;
+  }
+
+  .site-list__catalog-desktop {
+    order: -1;
+    width: 234px;
+    text-align: left;
+    border-right: 1px solid $white-two;
+  }
+
+  .site-list__link--tablet {
+    @include font-text($OpenSans, 15px, 24px, 700);
+    position: absolute;
+    width: auto;
+    bottom: -65px;
+    border: none;
+  }
+
+  .site-list__bottom-center {
+    width: 466px;
+    text-align: left;
+    padding-left: 35px;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+  }
+
+  .site-list__item--search {
+    width: 83px;
+  }
+
+  .site-list__desktop-bottom {
+    position: absolute;
+  }
+
+  .site-list__desktop-middle {
+    display: block;
+    bottom: -65px;
+    border: none;
+    left: 220px;
   }
 }
