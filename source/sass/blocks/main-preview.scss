@@ -35,8 +35,6 @@
 .main-preview__interior-items {
   background-color: $seafoam-blue;
   position: relative;
-
-
 }
 
 .main-preview__kid-games {
@@ -66,14 +64,11 @@
 @media(min-width: $tablet-width) {
   .main-preview__title {
     @include font-text($OpenSans, 20px, 30px, 700);
-
     & svg {
       top: 31px;
-
     }
   }
 }
-
 
 @media(min-width: $desktop-width) {
 

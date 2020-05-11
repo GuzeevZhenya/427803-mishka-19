@@ -48,3 +48,10 @@
     padding-left: 17px;
   }
 }
+
+@media(min-width:$desktop-width){
+  .email__container{
+    padding-right: 200px;
+    padding-left: 61px;
+  }
+}

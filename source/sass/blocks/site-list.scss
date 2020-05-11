@@ -2,6 +2,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  min-width: 260px;
 }
 
 .site-list__item {
@@ -16,6 +17,14 @@
     text-decoration: none;
     color: $black;
   }
+}
+
+.site-list__item:hover{
+  opacity: 0.6;
+}
+
+.site-list__item:active{
+  opacity: 0.3;
 }
 
 .site-list__item:first-child {
@@ -53,6 +62,10 @@
 
   .site-list__link--out-tablet {
     display: none;
+  }
+
+  .site-list__item {
+    border-bottom: none;
   }
 
   .site-list__item--basket-tablet {
@@ -110,9 +123,7 @@
     padding-left: 35px;
   }
 
-  .site-list__item {
-    border-bottom: none;
-  }
+
 
   .site-list__item--search {
     width: 83px;

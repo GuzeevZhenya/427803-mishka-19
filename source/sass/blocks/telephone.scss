@@ -52,3 +52,10 @@
     padding-left: 17px;
   }
 }
+
+@media(min-width:$tablet-width){
+  .telephone__container{
+    padding-right: 200px;
+    padding-left: 61px;
+  }
+}

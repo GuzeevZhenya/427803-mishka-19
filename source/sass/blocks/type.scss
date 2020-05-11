@@ -93,6 +93,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
 
+  @media(min-width: $desktop-width) {
+    padding-right: 200px;
+    padding-left: 61px;
   }
 }

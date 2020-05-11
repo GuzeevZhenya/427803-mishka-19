@@ -12,11 +12,9 @@
   padding-top: 76px;
   padding-bottom: 74px;
   text-align: center;
-
-  @media(min-width: $tablet-width) {
-    @include font-text($OpenSans, 43px, 50px, 700);
-  }
 }
+
+
 
 .main__description {
   @include font-text($OpenSans, 13px, 24px, 400);
@@ -27,12 +25,22 @@
 
   @media(min-width: $tablet-width) {
     // @include font-text($OpenSans, 17px, 24px, 400);
-
-
-
     padding: 0;
     padding-top: 80px;
+  }
+}
 
-
+@media(min-width: $tablet-width) {
+  .main__title {
+    @include font-text($OpenSans, 43px, 50px, 700);
+  }
+  .main__title::after{
+    content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../../img/bg-zigzag-fill.svg") no-repeat;
+      bottom: -100px;
+      left: 150px;
   }
 }
