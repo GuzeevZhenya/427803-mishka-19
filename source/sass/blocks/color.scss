@@ -51,22 +51,18 @@
   left: 10px;
   z-index: 2;
   opacity: 0;
-
 }
 
 .color__input:checked+.color__name::after {
   opacity: 1;
 }
 
-.color__container {
-}
+.color__container {}
 
 
 @media(min-width: $tablet-width) {
   .color {
-    @media(min-width: $tablet-width) {
       background-color: $white;
-    }
   }
 
   .color__list {
@@ -89,5 +85,11 @@
     justify-content: space-between;
     padding: 50px 200px 50px 61px;
   }
+}
 
+@media(min-width: $desktop-width) {
+  .color__list{
+    justify-content: flex-start;
+    margin-left: 46px;
+  }
 }

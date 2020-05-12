@@ -9,12 +9,10 @@
   margin: 0;
   color: $black;
   background-color: $white;
-  padding-top: 76px;
+  padding-top: 73px;
   padding-bottom: 74px;
   text-align: center;
 }
-
-
 
 .main__description {
   @include font-text($OpenSans, 13px, 24px, 400);
@@ -38,9 +36,9 @@
     content: "";
       position: absolute;
       width: 100%;
-      height: 100%;
-      background: url("../../img/bg-zigzag-fill.svg") no-repeat;
-      bottom: -100px;
-      left: 150px;
+      height: 34px;
+      background: url("../../img/bg-zigzag-fill.svg") repeat-x;
+      top: 260px;
+      right: 0;
   }
 }

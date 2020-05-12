@@ -6,7 +6,6 @@
 .header__logo img {
   padding: 12px 0;
   margin-left: 86px;
-
 }
 
 @media(min-width: $tablet-width) {
@@ -26,5 +25,7 @@
   .header__logo img {
     top: -10px;
     left: 450px;
+    display: block;
+    z-index: 2;
   }
 }

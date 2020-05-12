@@ -2,21 +2,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 61px;
+  margin-top: 56px;
+  position: relative;
 
   @media(min-width: $tablet-width) {
     margin-top: 82px;
     padding-top: 86px;
   }
-
-
 }
 
 .reviews__wrapper {
   @include wrapper;
   flex-wrap: wrap;
-
-
+  position: relative;
   @media(min-width:$tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -25,7 +23,17 @@
   @media(min-width: $desktop-width) {
     padding-left: 225px;
   }
+}
 
+.reviews::before {
+  content: "";
+  position: absolute;
+  background: url(../../img/bg-zigzag-line.svg) repeat-x;
+  width: 100%;
+  height: 6px;
+  left: 0;
+  bottom: -50px;
+  background-size: contain;
 }
 
 .reviews__title {
@@ -42,8 +50,8 @@
 .reviews__text {
   @include font-text($OpenSans, 15px, 30px, 400);
   color: $text;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 29px;
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 17px, 30px, 400);
@@ -92,8 +100,8 @@
   background-color: #ffffff;
   border: none;
   position: absolute;
-  top: 12px;
-  left: 42px;
+  top: 14px;
+  left: 35px;
 
   @media(min-width: $tablet-width) {
     transform: rotate(180deg);
@@ -116,36 +124,26 @@
   background-color: #ffffff;
   border: none;
   position: absolute;
-  top: 12px;
+  top: 15px;
   right: 38px;
-
-
   @media(min-width: $tablet-width) {
     transform: rotate(180deg);
     right: 90px;
-
   }
 }
 
 .reviews__link {
-  margin-top: 38px;
+  margin-top: 40px;
 }
 
 .reviews__link--hidden {
   display: none;
-
-
-}
-
-.reviews__link {
-  margin-top: 38px;
 }
 
 .reviews__link-mob--hidden {
   display: none;
 
   @media(min-width: $tablet-width) {
-
     display: flex;
     margin: 0;
     max-width: 175px;

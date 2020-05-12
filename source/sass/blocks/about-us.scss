@@ -15,15 +15,36 @@
 .about-us__description {
   @include font-text($OpenSans, 17px, 20px, 700);
   color: $black;
-  margin-top: 88px;
-  max-width: 251px;
+  margin-top: 85px;
+  max-width: 220px;
   position: relative;
 
   & svg {
     position: absolute;
-    top: -48px;
+    top: -55px;
+    left: 7px;
     fill: $seafoam-blue;
   }
+  &--flower {
+    max-width: 190px;
+  }
+
+  &--money {
+  }
+  &--heart {
+    max-width: 200px;
+  }
+  &--ball {
+    margin-top: 80px;
+  }
+  &--roket {
+    max-width: 250px;
+    margin-top: 83px;
+  }
+  &--gift {
+    margin-top: 80px;
+  }
+
 }
 
 .about-us__advantages {
@@ -32,8 +53,6 @@
 }
 
 @media(min-width:$tablet-width) {
-
-
   .about-us__title {
     @include font-text($OpenSans, 43px, 50px, 700);
   }
@@ -41,34 +60,25 @@
   .about-us__description {
     @include font-text($OpenSans, 20px, 22px, 700);
     max-width: 295px;
-
     &--flower {
       order: 1;
     }
-
     &--money {
       order: 3;
     }
-
     &--heart {
       order: 5;
     }
-
     &--ball {
       order: 2;
     }
-
     &--roket {
       order: 4;
     }
-
     &--gift {
       order: 6;
     }
-
   }
-
-
 
   .about-us__advantages {
     display: flex;

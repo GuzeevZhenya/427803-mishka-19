@@ -3,19 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid $text;
-
-  @media(min-width: $tablet-width) {
-    border: none;
-  }
+  border-bottom: 1px solid $white-two;
 }
 
 .social__item {
   padding: 0 20px 23px 20px;
   line-height: 0;
   font-size: 0;
+}
 
-  @media(min-width: $tablet-width) {
+
+@media(min-width: $tablet-width) {
+  .social__list {
+    border: none;
+  }
+
+  .social__item{
     padding-bottom: 0;
   }
 }
