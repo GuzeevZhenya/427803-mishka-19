@@ -1,22 +1,28 @@
-.telephone {}
+.telephone {
+  margin-top: 30px;
+}
 
 .telephone input {
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
-  height: 30px;
+  height: 52px;
   margin-bottom: 24px;
-  background-color: $white;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .telephone__wrapper {
   @include wrapper;
 }
 
+.telephone__title {
+  margin-bottom: 7px;
+}
+
 .telephone ::placeholder {
   @include font-text($OpenSans, 19px, 18px, 400);
   color: $gray-placeholder;
-
 }
 
 .telephone__container {
@@ -34,7 +40,6 @@
 @media(min-width:$tablet-width) {
   .telephone input {
     width: 500px;
-
   }
 
   .telephone__container {

@@ -7,8 +7,6 @@
   text-align: left;
   padding-left: 40px;
   position: relative;
-
-
   & svg{
     width: 40px;
     height: 40px;
@@ -16,8 +14,16 @@
     right: 33px;
     bottom: -15px;
   }
+}
 
-  @media(min-width: $tablet-width) {
+@media(min-width: $tablet-width) {
+  .copyright {
     padding-top: 0;
+    padding-right: 55px;
+    & svg{
+      right: 0;
+      fill: $seafoam-blue;
+      padding-top: 0;
+    }
   }
 }

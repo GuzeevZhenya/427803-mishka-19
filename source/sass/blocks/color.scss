@@ -1,4 +1,6 @@
-.color {}
+.color {
+  margin-top: 25px;
+}
 
 .color__wrapper {
   @include wrapper;
@@ -12,6 +14,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 22px;
 }
 
 .color__input {
@@ -22,10 +25,9 @@
 .color__name {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
-
   display: flex;
   align-items: center;
-  margin-bottom: 22px;
+
 }
 
 .color__name::before {
@@ -35,7 +37,7 @@
   height: 39px;
   border: 2px solid $text;
   background-color: #ffffff;
-  margin-right: 24px;
+  margin-right: 22px;
 }
 
 .color__name::after {
@@ -47,10 +49,14 @@
   background: url("../img/icon-tick.svg") no-repeat;
   background-size: cover;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 13px;
+  left: 9px;
   z-index: 2;
   opacity: 0;
+}
+
+.color__item:last-child{
+  margin: 0;
 }
 
 .color__input:checked+.color__name::after {

@@ -9,8 +9,8 @@
   margin: 0;
   color: $black;
   background-color: $white;
-  padding-top: 73px;
-  padding-bottom: 74px;
+  padding-top: 95px;
+  padding-bottom: 81px;
   text-align: center;
 }
 
@@ -18,8 +18,7 @@
   @include font-text($OpenSans, 13px, 24px, 400);
   @include wrapper;
   color: $text;
-
-  padding-top: 29px;
+  padding-top: 25px;
 
   @media(min-width: $tablet-width) {
     // @include font-text($OpenSans, 17px, 24px, 400);
@@ -38,7 +37,7 @@
       width: 100%;
       height: 34px;
       background: url("../../img/bg-zigzag-fill.svg") repeat-x;
-      top: 260px;
+      top: 280px;
       right: 0;
   }
 }

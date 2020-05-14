@@ -53,24 +53,37 @@
 }
 
 @media(min-width:$tablet-width) {
+  .about-us{
+    padding-top: 68px;
+  }
   .about-us__title {
     @include font-text($OpenSans, 43px, 50px, 700);
+    margin-bottom: 17px;
   }
 
   .about-us__description {
     @include font-text($OpenSans, 20px, 22px, 700);
     max-width: 295px;
+    margin-top: 112px;
+    margin-right: 38px;
     &--flower {
       order: 1;
+      margin-top: 85px;
+      padding-right: 70px;
     }
     &--money {
       order: 3;
+      padding-right: 50px;
+
     }
     &--heart {
       order: 5;
+      padding-right: 60px;
+
     }
     &--ball {
       order: 2;
+      margin-top: 85px;
     }
     &--roket {
       order: 4;
@@ -83,7 +96,6 @@
   .about-us__advantages {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 670px;
   }
 }

@@ -1,5 +1,5 @@
 .video {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 33px;
 
 
@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 0;
+    padding-bottom: 45px;
   }
 }
 
@@ -19,7 +20,8 @@
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 20px, 24px, 700);
-    padding-top: 42px;
+    padding-top: 38px;
+    padding-left: 60px;
     padding-bottom: 0;
     margin-left: 42px;
     order: 2;
@@ -34,11 +36,11 @@
 
 .video svg {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 34px;
 
   @media(min-width: $tablet-width) {
-    top: 39px;
+    top: 34px;
     left: 0;
   }
   @media(min-width: $desktop-width) {
@@ -57,13 +59,13 @@
 .video__description {
   @include font-text($OpenSans, 13px, 24px, 400);
   color: $text;
-  margin: 34px 0 29px 0;
+  margin: 25px 0 27px 0;
   padding: 0 34px;
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 15px, 30px, 400);
-    margin-bottom: 40px;
-    margin-top: 41px;
+    margin-bottom: 35px;
+    margin-top: 33px;
     padding: 0 40px;
     order: 3;
   }
@@ -98,7 +100,7 @@
 
   .video__image {
     max-width: 682px;
-    min-height: 455px;
+    height: 455px;
     position: absolute;
     top: 0;
     left: 0;

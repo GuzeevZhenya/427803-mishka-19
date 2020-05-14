@@ -15,17 +15,16 @@
   background-size: contain;
 
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background: none;
   }
-
 }
 
 .product-list__wrapper {
   @include wrapper;
   position: relative;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 225px;
   }
 }
@@ -36,14 +35,7 @@
   margin: 0;
   margin-bottom: 3px;
 
-  @media(min-width: $tablet-width) {
-    @include font-text($OpenSans, 43px, 50px, 700);
-    display: inline-block;
-    margin-right: 150px;
-    margin-bottom: 55px;
-  }
-
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     @include font-text($OpenSans, 53px, 57px, 700);
   }
 }
@@ -53,15 +45,14 @@
   color: $seafoam-blue;
   text-transform: uppercase;
 
-  @media(min-width: $tablet-width) {
-    display: inline-block;
+  @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 17px, 17px, 700);
+    display: inline-block;
     max-width: 70px;
     text-align: center;
-
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     left: 97px;
   }
@@ -72,11 +63,13 @@
   color: $text;
   margin: 0;
   margin-top: 20px;
+  margin-bottom: 17px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 17px, 30px, 400);
     margin: 0;
     max-width: 285px;
+    margin-bottom: 34px;
   }
 }
 
@@ -88,10 +81,10 @@
   margin-bottom: 25px;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 20px, 24px, 700);
     max-width: 291px;
-    margin-top: 50px;
+    margin-top: 58px;
     margin-bottom: 34px;
   }
 }
@@ -104,11 +97,37 @@
 }
 
 .product-list img {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 105px;
     right: 53px;
     width: 333px;
     height: 404px;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product-list__title {
+    @include font-text($OpenSans, 43px, 50px, 700);
+    display: inline-block;
+    margin-right: 135px;
+    margin-bottom: 48px;
+  }
+
+
+.product-list::before {
+  content: "";
+  position: absolute;
+  background: url(../../img/bg-zigzag-line.svg) repeat-x;
+  width: 100%;
+  height: 15px;
+  left: -16px;
+  bottom: -20px;
+  background-size: contain;
+}
 }

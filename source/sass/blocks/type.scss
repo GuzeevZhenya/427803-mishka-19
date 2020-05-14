@@ -1,4 +1,6 @@
-.type {}
+.type {
+  margin-top: 25px;
+}
 
 /*
 .type fieldset {
@@ -20,7 +22,7 @@
 .type__radio {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
-  padding-left: 66px;
+  padding-left: 64px;
   position: relative;
   padding-top: 11px;
 
@@ -42,7 +44,6 @@
   top: 0;
   left: 0;
   z-index: 1;
-
 }
 
 .type__radio::after {
@@ -70,7 +71,7 @@
 .type__item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   & input {
     appearance: none;

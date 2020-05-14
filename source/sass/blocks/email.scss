@@ -1,4 +1,6 @@
-.email {}
+.email {
+  margin-top: 9px;
+}
 
 .email__wrapper {
   @include wrapper;
@@ -8,9 +10,10 @@
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
-  height: 30px;
+  height: 52px;
   margin-bottom: 24px;
-  background-color: $white;
+  margin-top: -24px;
+  display: flex;
 }
 
 .email ::placeholder {
@@ -20,13 +23,15 @@
 
 .email__container {
   position: relative;
-
   & svg {
     position: absolute;
     top: 37px;
     right: 0;
   }
+}
 
+.email__title {
+  margin-bottom: 2px;
 }
 
 @media(min-width:$tablet-width) {

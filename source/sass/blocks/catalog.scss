@@ -8,7 +8,7 @@
 
 .catalog__item {
   border: 1px solid $white-two;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .catalog__item-box {
@@ -26,7 +26,7 @@
 }
 
 .catalog__item-info {
-  padding: 25px 25px;
+  padding: 26px 26px;
   padding-bottom: 30px;
 }
 
@@ -47,6 +47,7 @@
 .catalog__item-link svg {
   position: absolute;
   right: 0;
+  top: 23px;
 }
 
 .catalog__item-text {
@@ -67,17 +68,26 @@
 
 
 @media(min-width: $tablet-width) {
+
+  .catalog {
+    margin-top: 77px;
+    padding-bottom: 68px;
+  }
   .catalog__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 54px;
+    margin-top: 53px;
 
     & img{
       height: 100%;
       width: 100%;
     }
+  }
+
+  .catalog__item-link svg{
+    right: 3px;
   }
 
   .catalog__item-info {
@@ -90,6 +100,7 @@
 
   .catalog__item-title {
     @include font-text($OpenSans, 20px, 24px, 700);
+    max-width: 230px;
   }
 
   .catalog__item-text {
@@ -98,6 +109,7 @@
 
   .catalog__item-price {
     @include font-text($OpenSans, 17px, 24px, 700);
+    padding-left: 3px;
   }
 }
 

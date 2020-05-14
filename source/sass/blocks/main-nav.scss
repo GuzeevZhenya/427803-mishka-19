@@ -2,7 +2,7 @@
   background-color: $white-three;
   display: flex;
   flex-wrap: wrap;
-  display: none;
+  display: block;
 }
 
 .main-nav__wrapper {}
@@ -27,7 +27,7 @@
 
   .main-nav__delivery {
     @include font-text($OpenSans, 15px, 24px, 400);
-    right: 52px;
+    right: 0;
     cursor:	default;
   }
 }
