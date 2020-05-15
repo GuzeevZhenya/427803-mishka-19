@@ -92,7 +92,7 @@
   right: 38px;
 }
 
-.reviews__link {
+.reviews__linklink {
   margin-top: 40px;
 }
 
@@ -177,7 +177,31 @@
 }
 
 @media(min-width: $desktop-width) {
+
+  .reviews{
+    padding-bottom: 130px;
+  }
   .reviews__wrapper {
     padding-left: 225px;
+  }
+
+  .reviews__title{
+    @include font-text($OpenSans, 53px, 57px, 700);
+  }
+
+
+  .reviews::after{
+    left: 245px;
+    top: 5px;
+  }
+
+  .reviews__text{
+    margin-top: 45px;
+    margin-bottom: 40px;
+    max-width: 800px;
+  }
+
+  .reviews__link-mob--hidden {
+    margin-top: 10px;
   }
 }

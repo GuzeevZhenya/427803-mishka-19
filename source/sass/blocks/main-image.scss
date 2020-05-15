@@ -19,6 +19,7 @@
   }
 
   @media(min-width: $desktop-width) {
-    max-width: 605px;
+    @include font-text($OpenSans, 53px, 57px, 700);
+    max-width: 626px;
   }
 }

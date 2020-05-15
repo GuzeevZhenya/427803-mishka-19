@@ -23,8 +23,9 @@
 
 @media(min-width: $desktop-width) {
   .header__logo img {
+    margin: 0;
     top: -10px;
-    left: 450px;
+    left: 500px;
     display: block;
     z-index: 2;
   }

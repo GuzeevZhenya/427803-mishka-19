@@ -36,8 +36,9 @@
 @media(min-width: $desktop-width) {
   .main-nav__delivery {
     position: absolute;
+    width: 250px;
     display: none;
     bottom: -40px;
-    right: 50px;
+    right: 0;
   }
 }

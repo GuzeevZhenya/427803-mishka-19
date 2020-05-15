@@ -101,6 +101,16 @@
 }
 
 @media(min-width:$desktop-width) {
+
+  .about-us{
+    padding-top:105px;
+  }
+  .about-us__title{
+    @include font-text($OpenSans, 53px, 57px, 700);
+  }
+  .about-us__description{
+    margin-right: 40px;
+  }
   .about-us__wrapper {
     padding-left: 225px;
   }

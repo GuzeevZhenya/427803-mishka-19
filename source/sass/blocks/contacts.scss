@@ -121,7 +121,12 @@
 
 @media(min-width: $desktop-width) {
   .contacts {
+    margin-top: 175px;
     padding-bottom: 105px;
+    margin-bottom: 0;
+  }
+  .contacts__title{
+    @include font-text($OpenSans, 53px, 57px, 700);
   }
   .contacts__wrapper{
     padding-left: 225px;
@@ -129,9 +134,10 @@
   .contacts__block{
     flex-direction: column;
     max-width: 300px;
+    margin-bottom: 50px;
   }
   .contacts__email {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .contacts__adress{
     margin: 0;
