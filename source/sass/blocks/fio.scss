@@ -38,8 +38,17 @@
 }
 
 @media(min-width: $tablet-width) {
+
+  .fio {
+    margin: 50px 0;
+  }
+
   .fio__list {
     width: 500px;
+  }
+
+  .fio__item ::placeholder {
+    @include font-text($OpenSans, 19px, 18px, 400);
   }
 
   .fio__item {
@@ -48,27 +57,38 @@
   }
 
   .fio__item label {
-    padding-top: 13px;
     margin-right: 25px;
   }
 
   .fio__item input {
+    margin-top: -13px;
     height: 52px;
   }
 
   .fio__container {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      padding: 50px 200px 50px 61px;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
   }
+
+
 }
 
 @media(min-width: $desktop-width) {
+  .fio__list{
+    width: 100%;
+  }
   .fio__item label{
     padding: 0;
   }
   .fio__item input{
+    width: 100%;
     margin-top: -15px;
   }
+  .fio__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 200px 50px 61px;
+}
 }

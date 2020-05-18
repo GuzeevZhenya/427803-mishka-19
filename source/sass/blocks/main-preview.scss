@@ -62,7 +62,14 @@
 }
 
 @media(min-width: $desktop-width) {
+
   .main-preview__item {
     padding-right: 350px;
+  }
+
+  .main-preview::after{
+    left: 0;
+    width: 1150px;
+    bottom: -10px;
   }
 }

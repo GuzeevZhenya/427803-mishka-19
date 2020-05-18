@@ -17,6 +17,7 @@
     position: absolute;
     top: 0;
     left: -38px;
+    z-index: 2;
   }
 
 }
@@ -27,6 +28,5 @@
     top: -10px;
     left: 500px;
     display: block;
-    z-index: 2;
   }
 }

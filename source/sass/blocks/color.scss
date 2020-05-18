@@ -27,7 +27,6 @@
   color: $black;
   display: flex;
   align-items: center;
-
 }
 
 .color__name::before {
@@ -71,10 +70,19 @@
       background-color: $white;
   }
 
+  .color__wrapper{
+   padding-top: 50px;
+   padding-bottom: 29px;
+  }
+
+  .color__item:last-child{
+    margin-bottom: 21px;
+  }
+
   .color__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
   }
 
   .color__item {
@@ -84,18 +92,23 @@
   .color__name {
     @include font-text($OpenSans, 17px, 18px, 700);
   }
+  .color__container{
+    display: flex;
+    justify-content: space-between;
+  }
 
+}
+
+@media(min-width: $desktop-width) {
+
+  .color__list{
+    justify-content: flex-start;
+    margin-left: 46px;
+  }
   .color__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 50px 200px 50px 61px;
-  }
-}
-
-@media(min-width: $desktop-width) {
-  .color__list{
-    justify-content: flex-start;
-    margin-left: 46px;
   }
 }

@@ -84,7 +84,6 @@
   .contacts__email p{
     @include font-text($OpenSans, 17px, 30px, 400);
     padding-right: 20px;
-
   }
 
   .contacts__email a{
@@ -119,29 +118,37 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     margin-top: 175px;
     padding-bottom: 105px;
     margin-bottom: 0;
   }
-  .contacts__title{
+
+  .contacts__title {
     @include font-text($OpenSans, 53px, 57px, 700);
   }
-  .contacts__wrapper{
+
+  .contacts__wrapper {
     padding-left: 225px;
+    z-index: 1;
+    position: relative;
   }
-  .contacts__block{
+
+  .contacts__block {
     flex-direction: column;
     max-width: 300px;
     margin-bottom: 50px;
   }
+
   .contacts__email {
     margin-bottom: 30px;
   }
-  .contacts__adress{
+
+  .contacts__adress {
     margin: 0;
   }
+
   .contacts__link {
     margin: 0;
     max-width: 230px;

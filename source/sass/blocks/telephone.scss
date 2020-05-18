@@ -40,16 +40,21 @@
 @media(min-width:$tablet-width) {
   .telephone input {
     width: 500px;
+    background-color: inherit;
+  }
+
+  .telephone__title {
+    padding-top: 19px;
   }
 
   .telephone__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 
     & svg {
-      top: -10px;
-
+      top: 15px;
     }
   }
 
@@ -58,9 +63,24 @@
   }
 }
 
-@media(min-width:$tablet-width){
-  .telephone__container{
-    padding-right: 200px;
-    padding-left: 61px;
+@media(min-width:$desktop-width){
+
+  .telephone__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 200px 0 61px;
+    align-items: center;
+
+    & svg {
+      right: 200px;
+      top: 15px;
+      opacity: 0.2;
+    }
+  }
+
+  .telephone input {
+    width: 100%;
+    margin: 0;
   }
 }

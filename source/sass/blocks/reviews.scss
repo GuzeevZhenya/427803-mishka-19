@@ -64,6 +64,7 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
+  margin-bottom: 38px;
 }
 
 .reviews__button--prev svg {
@@ -114,15 +115,19 @@
     position: relative;
   }
 
-  .reviews::after {
+  .reviews__wrapper::after {
     content: "";
     position: absolute;
     background: url("../../img/review@1x.jpg");
     width: 350px;
     height: 457px;
     z-index: -1;
-    left: 0;
-    top: 0;
+    left: 50px;
+    top: -40px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../../img/review@2x.jpg");
+    }
   }
 
   .reviews__wrapper {
@@ -189,9 +194,13 @@
     @include font-text($OpenSans, 53px, 57px, 700);
   }
 
+  .reviews::before {
+    height: 23px;
+  }
+
 
   .reviews::after{
-    left: 245px;
+    left: 150px;
     top: 5px;
   }
 
