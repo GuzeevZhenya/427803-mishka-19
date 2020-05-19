@@ -3,12 +3,17 @@
   position: relative;
 }
 
-
-
 .header__logo img {
   padding: 12px 0;
   margin-left: 86px;
+}
 
+.header__logo img:hover {
+  opacity: 0.6;
+}
+
+.header__logo img:active {
+  opacity: 0.3;
 }
 
 @media(min-width: $tablet-width) {
@@ -19,14 +24,17 @@
   .header__logo img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -38px;
+    z-index: 2;
   }
 
 }
 
 @media(min-width: $desktop-width) {
   .header__logo img {
+    margin: 0;
     top: -10px;
-    left: 450px;
+    left: 500px;
+    display: block;
   }
 }

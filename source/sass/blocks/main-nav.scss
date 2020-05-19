@@ -2,6 +2,7 @@
   background-color: $white-three;
   display: flex;
   flex-wrap: wrap;
+  display: block;
 }
 
 .main-nav__wrapper {}
@@ -13,7 +14,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 30px;
+  right: 25px;
   top: 22px;
   background-color: #ffffff;
   border: none;
@@ -26,7 +27,8 @@
 
   .main-nav__delivery {
     @include font-text($OpenSans, 15px, 24px, 400);
-    right: 52px;
+    right: 0;
+    cursor: default;
   }
 }
 
@@ -34,8 +36,9 @@
 @media(min-width: $desktop-width) {
   .main-nav__delivery {
     position: absolute;
+    width: 250px;
     display: none;
     bottom: -40px;
-    right: 50px;
+    right: 0;
   }
 }

@@ -1,21 +1,26 @@
 .map {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  position: relative;
+}
+
+.map__location {
+  display: block;
   width: 100%;
   height: 457px;
-  background-image: url("https://static-maps.yandex.ru/1.x/?ll=30.323118,59.938635&size=450,450&z=16&l=map&pt=30.323118,59.938635,vkbkm");
+  border: none;
+  position: absolute;
+  bottom: 145px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+}
 
-  @media (min-width: $tablet-width) {
-    margin-top: 53px;
-    margin-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-70%);
-    left: 50%;
+@media(min-width: $desktop-width) {
+  .map__location {
+    right: 51px;
+    bottom: 105px;
     width: 525px;
+    height: 457px;
+
   }
 }

@@ -6,24 +6,19 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-top: 34px;
 }
 
 .form__title {
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $seafoam-blue;
   border: none;
-  padding-right: 27px;
-  margin-bottom: 23px;
+  padding-right: 25px;
+  margin-bottom: 25px;
   position: relative;
   background: none;
   outline: none;
+  text-transform: uppercase;
   width: auto;
-}
-
-.form__contacts {
-  background-color: $white;
-  padding: 50px 0;
 }
 
 .form__title::after {
@@ -37,21 +32,23 @@
   left: 100%;
 }
 
-.form__contacts {
-  background-color: $white;
-  padding: 50px 0;
-}
-
-
 @media(min-width: $tablet-width) {
 
-
+  /*
   .form fieldset {
     border: none;
     margin-top: 50px;
   }
-
+*/
   .form__title::after {
     display: none;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .form__title {
+    width: 114px;
+    padding: 0;
+    margin: 0;
   }
 }

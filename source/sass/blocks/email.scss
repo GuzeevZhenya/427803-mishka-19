@@ -1,4 +1,6 @@
-.email {}
+.email {
+  margin-top: 9px;
+}
 
 .email__wrapper {
   @include wrapper;
@@ -8,9 +10,16 @@
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
-  height: 30px;
+  height: 52px;
   margin-bottom: 24px;
-  background-color: $white;
+  margin-top: -24px;
+  display: flex;
+  outline: none;
+}
+
+.email input:hover,
+.email input:focus {
+  border-color: $seafoam-blue-radio;
 }
 
 .email ::placeholder {
@@ -26,12 +35,21 @@
     top: 37px;
     right: 0;
   }
+}
 
+.email__title {
+  margin-bottom: 2px;
 }
 
 @media(min-width:$tablet-width) {
+
+  .email {
+    margin: 0;
+  }
+
   .email input {
     width: 500px;
+    background-color: inherit;
   }
 
   .email__container {
@@ -41,10 +59,34 @@
 
     & svg {
       top: -10px;
+      right: 0;
+      opacity: 0.2;
     }
   }
 
   .email ::placeholder {
     padding-left: 17px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .email__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 200px 0 61px;
+    align-items: center;
+
+    & svg {
+      top: 15px;
+      right: 200px;
+      opacity: 0.2;
+    }
+  }
+
+  .email input {
+    width: 100%;
+    margin: 0;
+
   }
 }
