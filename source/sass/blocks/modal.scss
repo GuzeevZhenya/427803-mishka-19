@@ -73,6 +73,11 @@
   height: 52px;
  }
 
+ .modal__size:hover{
+  border-color: $text;
+  opacity: 0.3;
+ }
+
  .modal__size:active,
  .modal__size:focus{
    border-color:$seafoam-blue ;

@@ -10,7 +10,19 @@
   margin-bottom: 24px;
   display: flex;
   justify-content: flex-start;
+  outline: none;
 }
+
+.telephone input:hover,
+.telephone input:focus {
+  border-color: $seafoam-blue-radio;
+}
+
+.telephone__container svg:hover,
+.telephone__container svg:active {
+  fill: $seafoam-blue-radio;
+}
+
 
 .telephone__wrapper {
   @include wrapper;
@@ -38,6 +50,10 @@
 /*Планшет версия*/
 
 @media(min-width:$tablet-width) {
+  .telephone{
+    margin: 0;
+  }
+
   .telephone input {
     width: 500px;
     background-color: inherit;
@@ -51,7 +67,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 
     & svg {
       top: 15px;

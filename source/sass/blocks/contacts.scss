@@ -14,6 +14,14 @@
   margin-bottom: 26px;
 }
 
+.contacts__email a:hover {
+  color: $svg-hover;
+}
+
+.contacts__email a:active{
+  opacity: 0.3;
+}
+
 .contacts__block {
   display: flex;
   flex-direction: column;

@@ -20,6 +20,13 @@
   border-bottom: 2px solid $black;
   height: 52px;
   margin-bottom: 24px;
+  outline: none;
+}
+
+.fio__item input:hover,
+.fio__item input:active,
+.fio__item input:focus {
+  border-color: $seafoam-blue-radio;
 }
 
 .fio__item:last-child input{
@@ -40,7 +47,8 @@
 @media(min-width: $tablet-width) {
 
   .fio {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 37px;
   }
 
   .fio__list {
@@ -54,6 +62,7 @@
   .fio__item {
     display: flex;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .fio__item label {
@@ -61,17 +70,17 @@
   }
 
   .fio__item input {
-    margin-top: -13px;
+    margin-top: -16px;
     height: 52px;
+    padding-left: 25px;
   }
 
+
   .fio__container {
-    padding-top: 13px;
+    padding-top: 18px;
     display: flex;
     justify-content: space-between;
   }
-
-
 }
 
 @media(min-width: $desktop-width) {

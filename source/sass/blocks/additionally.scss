@@ -14,7 +14,8 @@
   padding: 18px 0 0 17px;
 }
 
-.additionally__textarea:hover{
+.additionally__textarea:hover,
+.additionally__textarea:focus {
   border-color: $seafoam-blue-radio;
 }
 
@@ -24,7 +25,7 @@
 
 @media (min-width:$tablet-width) {
   .additionally__textarea {
-    max-width: 551px;
+    max-width: 500px;
     height: 142px;
     margin-bottom: 53px;
     border: 2px solid $very-dark-brown;
@@ -42,8 +43,6 @@
   .additionally__title{
     padding-top: 19px;
   }
-
-
 }
 
 @media(min-width:$desktop-width) {
