@@ -27,6 +27,7 @@
   text-decoration: none;
   display: block;
   max-width: 106px;
+
   & svg {
     position: absolute;
     right: 37px;
@@ -38,11 +39,13 @@
 @media(min-width: $tablet-width) {
   .main-preview__title {
     @include font-text($OpenSans, 20px, 30px, 700);
+
     & svg {
       top: 31px;
     }
   }
-  .main-preview{
+
+  .main-preview {
     @include wrapper;
     display: flex;
     flex-direction: row;
@@ -50,7 +53,7 @@
     position: relative;
   }
 
-  .main-preview::after{
+  .main-preview::after {
     content: "";
     position: absolute;
     width: 770px;
@@ -62,7 +65,14 @@
 }
 
 @media(min-width: $desktop-width) {
+
   .main-preview__item {
     padding-right: 350px;
+  }
+
+  .main-preview::after {
+    left: 0;
+    width: 1150px;
+    bottom: -10px;
   }
 }

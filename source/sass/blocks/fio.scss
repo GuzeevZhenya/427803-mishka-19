@@ -20,9 +20,16 @@
   border-bottom: 2px solid $black;
   height: 52px;
   margin-bottom: 24px;
+  outline: none;
 }
 
-.fio__item:last-child input{
+.fio__item input:hover,
+.fio__item input:active,
+.fio__item input:focus {
+  border-color: $seafoam-blue-radio;
+}
+
+.fio__item:last-child input {
   margin-bottom: 0;
 }
 
@@ -38,37 +45,62 @@
 }
 
 @media(min-width: $tablet-width) {
+
+  .fio {
+    margin-top: 50px;
+    margin-bottom: 37px;
+  }
+
   .fio__list {
     width: 500px;
+  }
+
+  .fio__item ::placeholder {
+    @include font-text($OpenSans, 19px, 18px, 400);
   }
 
   .fio__item {
     display: flex;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .fio__item label {
-    padding-top: 13px;
     margin-right: 25px;
   }
 
   .fio__item input {
+    margin-top: -16px;
     height: 52px;
+    padding-left: 25px;
   }
 
+
   .fio__container {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      padding: 50px 200px 50px 61px;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media(min-width: $desktop-width) {
-  .fio__item label{
+  .fio__list {
+    width: 100%;
+  }
+
+  .fio__item label {
     padding: 0;
   }
-  .fio__item input{
+
+  .fio__item input {
+    width: 100%;
     margin-top: -15px;
+  }
+
+  .fio__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 200px 50px 61px;
   }
 }

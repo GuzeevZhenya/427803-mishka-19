@@ -11,6 +11,14 @@
 
 .footer__logo {
   display: none;
+
+  & svg:hover {
+    fill: $svg-hover;
+  }
+
+  & svg:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -24,8 +32,8 @@
   }
 
   .footer__logo {
-    @media(min-width: $tablet-width) {
-      display: block;
-    }
+    display: block;
+
+
   }
 }

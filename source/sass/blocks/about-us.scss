@@ -25,22 +25,26 @@
     left: 7px;
     fill: $seafoam-blue;
   }
+
   &--flower {
     max-width: 190px;
   }
 
-  &--money {
-  }
+  &--money {}
+
   &--heart {
     max-width: 200px;
   }
+
   &--ball {
     margin-top: 80px;
   }
+
   &--roket {
     max-width: 250px;
     margin-top: 83px;
   }
+
   &--gift {
     margin-top: 80px;
   }
@@ -53,9 +57,10 @@
 }
 
 @media(min-width:$tablet-width) {
-  .about-us{
+  .about-us {
     padding-top: 68px;
   }
+
   .about-us__title {
     @include font-text($OpenSans, 43px, 50px, 700);
     margin-bottom: 17px;
@@ -66,28 +71,34 @@
     max-width: 295px;
     margin-top: 112px;
     margin-right: 38px;
+
     &--flower {
       order: 1;
       margin-top: 85px;
       padding-right: 70px;
     }
+
     &--money {
       order: 3;
       padding-right: 50px;
 
     }
+
     &--heart {
       order: 5;
       padding-right: 60px;
 
     }
+
     &--ball {
       order: 2;
       margin-top: 85px;
     }
+
     &--roket {
       order: 4;
     }
+
     &--gift {
       order: 6;
     }
@@ -102,15 +113,18 @@
 
 @media(min-width:$desktop-width) {
 
-  .about-us{
-    padding-top:105px;
+  .about-us {
+    padding-top: 105px;
   }
-  .about-us__title{
+
+  .about-us__title {
     @include font-text($OpenSans, 53px, 57px, 700);
   }
-  .about-us__description{
+
+  .about-us__description {
     margin-right: 40px;
   }
+
   .about-us__wrapper {
     padding-left: 225px;
   }

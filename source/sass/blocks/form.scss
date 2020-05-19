@@ -33,18 +33,20 @@
 }
 
 @media(min-width: $tablet-width) {
+
+  /*
   .form fieldset {
     border: none;
     margin-top: 50px;
   }
-
+*/
   .form__title::after {
     display: none;
   }
 }
 
-@media(min-width: $desktop-width){
-  .form__title{
+@media(min-width: $desktop-width) {
+  .form__title {
     width: 114px;
     padding: 0;
     margin: 0;

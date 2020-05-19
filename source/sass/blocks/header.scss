@@ -8,6 +8,14 @@
   margin-left: 86px;
 }
 
+.header__logo img:hover {
+  opacity: 0.6;
+}
+
+.header__logo img:active {
+  opacity: 0.3;
+}
+
 @media(min-width: $tablet-width) {
   .header {
     border-bottom: 1px solid $white-two;
@@ -17,6 +25,7 @@
     position: absolute;
     top: 0;
     left: -38px;
+    z-index: 2;
   }
 
 }
@@ -27,6 +36,5 @@
     top: -10px;
     left: 500px;
     display: block;
-    z-index: 2;
   }
 }

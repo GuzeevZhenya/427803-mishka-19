@@ -1,5 +1,11 @@
 .type {
   margin-top: 25px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media(min-width: $desktop-width) {}
 }
 
 /*
@@ -29,7 +35,19 @@
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 19px, 18px, 700);
+    padding-top: 0;
+    padding-left: 80px;
+    margin-bottom: 30px;
   }
+}
+
+.type__radio:hover::before {
+  border-color: $seafoam-blue-radio;
+}
+
+.type__radio:active::before {
+  border-color: $text;
+  opacity: 0.3;
 }
 
 .type__radio::before {
@@ -44,6 +62,12 @@
   top: 0;
   left: 0;
   z-index: 1;
+
+  @media(min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+  }
 }
 
 .type__radio::after {
@@ -58,6 +82,13 @@
   background-color: $seafoam-blue-radio;
   z-index: 2;
   opacity: 0;
+
+  @media(min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 15px;
+  }
 }
 
 .type__item input:checked+.type__radio::after {
@@ -80,7 +111,7 @@
 
   @media(min-width: $tablet-width) {
     width: 500px;
-    margin-bottom: 18px;
+    margin-bottom: 28px;
   }
 }
 

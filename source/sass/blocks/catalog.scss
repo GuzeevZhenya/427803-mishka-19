@@ -48,6 +48,7 @@
   position: absolute;
   right: 0;
   top: 23px;
+  opacity: 0.2;
 }
 
 .catalog__item-text {
@@ -73,6 +74,7 @@
     margin-top: 77px;
     padding-bottom: 68px;
   }
+
   .catalog__item {
     display: flex;
     flex-direction: row;
@@ -80,13 +82,13 @@
     width: 100%;
     margin-top: 53px;
 
-    & img{
+    & img {
       height: 100%;
       width: 100%;
     }
   }
 
-  .catalog__item-link svg{
+  .catalog__item-link svg {
     right: 3px;
   }
 
@@ -126,7 +128,7 @@
     flex-direction: column;
   }
 
-  .catalog__item-text{
+  .catalog__item-text {
     margin: 0;
   }
 
@@ -142,7 +144,7 @@
     flex-direction: column;
   }
 
-  .catalog__item-container{
+  .catalog__item-container {
     flex-grow: 1;
   }
 }
