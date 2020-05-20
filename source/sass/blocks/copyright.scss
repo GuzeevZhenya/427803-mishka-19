@@ -20,14 +20,12 @@
     fill: $svg-hover;
   }
 
-
   &:active {
     opacity: 0.3;
   }
-
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .copyright {
     padding-top: 0;
     padding-right: 55px;
@@ -37,7 +35,5 @@
       fill: $seafoam-blue;
       padding-top: 0;
     }
-
-
   }
 }

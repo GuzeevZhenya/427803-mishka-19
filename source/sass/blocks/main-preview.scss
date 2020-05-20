@@ -1,11 +1,7 @@
-.main-preview {}
-
-.main-preview::after {}
-
 .main-preview__item {
   padding: 30px 0 30px 29px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 28px 185px 26px 33px;
     width: 50%;
   }
@@ -36,7 +32,7 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-preview__title {
     @include font-text($OpenSans, 20px, 30px, 700);
 
@@ -64,8 +60,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .main-preview__item {
     padding-right: 350px;
   }

@@ -2,8 +2,6 @@
   margin-top: 34px;
 }
 
-.fio__title {}
-
 .fio__wrapper {
   @include wrapper;
 }
@@ -12,7 +10,6 @@
   @include list-reset;
 }
 
-.fio__item {}
 
 .fio__item input {
   border: none;
@@ -44,8 +41,7 @@
   color: $gray-placeholder;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .fio {
     margin-top: 50px;
     margin-bottom: 37px;
@@ -75,7 +71,6 @@
     padding-left: 25px;
   }
 
-
   .fio__container {
     padding-top: 18px;
     display: flex;
@@ -83,7 +78,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .fio__list {
     width: 100%;
   }

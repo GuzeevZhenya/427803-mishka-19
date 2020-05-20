@@ -22,7 +22,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,5 @@
 
   .footer__logo {
     display: block;
-
-
   }
 }

@@ -24,16 +24,14 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .properties {
     max-width: 291px;
     display: block;
   }
-
 }
 
-
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .properties {
     margin-bottom: 105px;
   }

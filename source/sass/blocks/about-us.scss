@@ -30,8 +30,6 @@
     max-width: 190px;
   }
 
-  &--money {}
-
   &--heart {
     max-width: 200px;
   }
@@ -48,15 +46,13 @@
   &--gift {
     margin-top: 80px;
   }
-
 }
 
 .about-us__advantages {
   @include list-reset;
-
 }
 
-@media(min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .about-us {
     padding-top: 68px;
   }
@@ -81,13 +77,11 @@
     &--money {
       order: 3;
       padding-right: 50px;
-
     }
 
     &--heart {
       order: 5;
       padding-right: 60px;
-
     }
 
     &--ball {
@@ -111,8 +105,7 @@
   }
 }
 
-@media(min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
   .about-us {
     padding-top: 105px;
   }
@@ -123,6 +116,7 @@
 
   .about-us__description {
     margin-right: 40px;
+    width: 50%;
   }
 
   .about-us__wrapper {
@@ -131,9 +125,5 @@
 
   .about-us__advantages {
     width: 750px;
-  }
-
-  .about-us__description {
-    width: 50%;
   }
 }
