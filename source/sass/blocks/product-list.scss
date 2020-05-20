@@ -7,13 +7,12 @@
 .product-list__wrapper::before {
   content: "";
   position: absolute;
-  background: url(../../img/bg-zigzag-line.svg) repeat-x;
+  background: url("../../img/bg-zigzag-line.svg") repeat-x;
   width: 100%;
   height: 6px;
   bottom: -42px;
   left: 0;
   background-size: contain;
-
 }
 
 .product-list__wrapper {
@@ -58,8 +57,6 @@
   max-width: 291px;
 }
 
-.product-list img {}
-
 @media (min-width: $tablet-width) {
   .product-list {
     padding-top: 50px;
@@ -77,11 +74,10 @@
     background: none;
   }
 
-
   .product-list::before {
     content: "";
     position: absolute;
-    background: url(../../img/bg-zigzag-line.svg) repeat-x;
+    background: url("../../img/bg-zigzag-line.svg") repeat-x;
     width: 100%;
     height: 15px;
     left: -16px;
@@ -121,7 +117,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .product-list {
     padding-top: 130px;
   }
@@ -145,7 +140,6 @@
   }
 
   .product-list img {
-
     width: 525px;
     height: 636px;
     top: -50px;

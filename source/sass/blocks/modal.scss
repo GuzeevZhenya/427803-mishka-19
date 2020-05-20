@@ -1,9 +1,11 @@
 .modal {
-  padding: 0 30px;
   text-align: center;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px $modal-border;
-  padding: 36px 0 46px 0;
+  padding-top: 36px;
+  padding-bottom: 46px;
+  width: 320px;
+  margin: 0 auto;
+  //  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .modal__wrapper {
@@ -30,7 +32,6 @@
 .modal__description {
   @include font-text($OpenSans, 15px, 30px, 400);
   color: $text;
-
 }
 
 .modal__size {
@@ -54,7 +55,7 @@
   border: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .modal {
     width: 566px;
     margin: 0 auto;

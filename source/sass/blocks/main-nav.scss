@@ -1,11 +1,9 @@
 .main-nav {
   background-color: $white-three;
-  display: flex;
+  //display: flex;
   flex-wrap: wrap;
   display: block;
 }
-
-.main-nav__wrapper {}
 
 .main-nav__delivery {
   @include font-text($OpenSans, 15px, 24px, 400);
@@ -20,7 +18,7 @@
   border: none;
 }
 
-@media(min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
   }
@@ -33,7 +31,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-nav__delivery {
     position: absolute;
     width: 250px;

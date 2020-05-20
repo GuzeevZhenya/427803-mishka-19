@@ -11,14 +11,14 @@
   padding-bottom: 120px;
 
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 43px, 50px, 700);
     text-align: center;
     margin: 0 auto;
     padding-top: 153px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     @include font-text($OpenSans, 53px, 57px, 700);
     max-width: 626px;
   }

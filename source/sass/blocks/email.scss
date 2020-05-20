@@ -41,8 +41,7 @@
   margin-bottom: 2px;
 }
 
-@media(min-width:$tablet-width) {
-
+@media (min-width: $tablet-width) {
   .email {
     margin: 0;
   }
@@ -69,7 +68,7 @@
   }
 }
 
-@media(min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .email__container {
     width: 100%;
     display: flex;
@@ -87,6 +86,5 @@
   .email input {
     width: 100%;
     margin: 0;
-
   }
 }

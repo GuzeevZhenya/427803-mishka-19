@@ -2,8 +2,6 @@
   @include wrapper;
 }
 
-.main-form {}
-
 .main__title {
   @include font-text($OpenSans, 27px, 30px, 700);
   margin: 0;
@@ -21,8 +19,7 @@
   padding-top: 25px;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .main__title {
     @include font-text($OpenSans, 43px, 50px, 700);
   }

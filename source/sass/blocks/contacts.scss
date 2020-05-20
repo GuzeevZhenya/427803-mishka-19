@@ -83,8 +83,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .contacts__block {
     flex-direction: row;
     margin-bottom: 568px;
