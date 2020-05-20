@@ -71,7 +71,7 @@ gulp.task("webp", function () {
 //Создание спрайтов
 gulp.task("sprite", function () {
   return gulp
-    .src("source/img/icon-*svg")
+    .src("source/img/*-*svg")
     .pipe(
       svgstore({
         inlineSvg: true, //Удаляет ненужные комменты
