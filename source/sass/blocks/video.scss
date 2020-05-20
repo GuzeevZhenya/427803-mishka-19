@@ -1,6 +1,7 @@
 .video {
   padding-top: 25px;
   padding-bottom: 33px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,6 +10,11 @@
     padding-bottom: 45px;
   }
 }
+
+.video__image:hover .video__play {
+  transform: scale(1.2);
+}
+
 
 .video__title {
   @include font-text($OpenSans, 17px, 24px, 700);
@@ -34,7 +40,7 @@
   }
 }
 
-.video svg {
+.video__title-svg {
   position: absolute;
   top: 5px;
   left: 34px;
@@ -49,6 +55,20 @@
     top: 0;
   }
 }
+
+.video__play {
+  position: absolute;
+  top: 140px;
+  left: 80px;
+
+  @media (min-width: $tablet-width) {
+    top: 200px;
+    left: 280px;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
 
 .video__image {
   order: 1;
