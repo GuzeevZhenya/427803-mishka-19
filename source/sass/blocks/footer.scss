@@ -6,11 +6,19 @@
   @include wrapper;
   text-align: center;
   padding-top: 25px;
-  padding-bottom: 31px;
+  padding-bottom: 35px;
 }
 
 .footer__logo {
   display: none;
+
+  & svg:hover {
+    fill: $svg-hover;
+  }
+
+  & svg:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -19,13 +27,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 49px;
+    padding-top: 48px;
     padding-bottom: 54px;
   }
 
   .footer__logo {
-    @media(min-width: $tablet-width) {
-      display: block;
-    }
+    display: block;
+
+
   }
 }

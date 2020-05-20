@@ -3,10 +3,41 @@
   text-decoration: none;
   color: $black;
   display: block;
-  padding-top: 25px;
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 40px;
+  position: relative;
 
-  @media(min-width: $tablet-width) {
+  & svg {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 33px;
+    bottom: -15px;
+  }
+
+  & svg:hover {
+    fill: $svg-hover;
+  }
+
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+@media(min-width: $tablet-width) {
+  .copyright {
     padding-top: 0;
-    padding-right: 30px;
+    padding-right: 55px;
+
+    & svg {
+      right: 0;
+      fill: $seafoam-blue;
+      padding-top: 0;
+    }
+
+
   }
 }

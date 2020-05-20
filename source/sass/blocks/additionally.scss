@@ -10,30 +10,55 @@
   @include font-text($OpenSans, 17px, 18px, 400);
   color: $gray-placeholder;
   width: 100%;
+  outline: 0;
+  padding: 18px 0 0 17px;
+}
+
+.additionally__textarea:hover,
+.additionally__textarea:focus {
+  border-color: $seafoam-blue-radio;
 }
 
 .additionally__textarea::placeholder {
   max-width: 165px;
-  padding: 0;
-  padding: 18px 0 0 17px;
 }
 
-.additionally__container {
-  @media(min-width:$tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-
-
-@media(min-width:$tablet-width) {
+@media (min-width:$tablet-width) {
   .additionally__textarea {
     max-width: 500px;
+    height: 142px;
     margin-bottom: 53px;
+    border: 2px solid $very-dark-brown;
   }
 
   .additionally__textarea::placeholder {
     max-width: 100%;
+  }
+
+  .additionally__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additionally__title {
+    padding-top: 19px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+
+  .additionally__textarea {
+    max-width: 100%;
+  }
+
+  .additionally__textarea::placeholder {
+    max-width: 100%;
+  }
+
+  .additionally__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 200px 0 61px;
   }
 }

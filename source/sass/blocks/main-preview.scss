@@ -1,42 +1,19 @@
-.main-preview {
-  @media(min-width: $tablet-width) {
-    @include wrapper;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-  }
-}
+.main-preview {}
 
-.main-preview::after {
-  @media(min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("../../img/bg-zigzag-fill.svg") no-repeat;
-    bottom: -100px;
-  }
-}
+.main-preview::after {}
 
 .main-preview__item {
   padding: 30px 0 30px 29px;
 
   @media(min-width: $tablet-width) {
-    padding: 35px 0 34px 36px;
+    padding: 28px 185px 26px 33px;
     width: 50%;
   }
-}
-
-.main-preview__item {
-  padding: 30px 185px 30px 29px;
 }
 
 .main-preview__interior-items {
   background-color: $seafoam-blue;
   position: relative;
-
-
 }
 
 .main-preview__kid-games {
@@ -48,35 +25,44 @@
   @include font-text($OpenSans, 19px, 24px, 700);
   color: $white-three;
   text-decoration: none;
-
-  & a {
-    max-width: 106px;
-  }
+  display: block;
+  max-width: 106px;
 
   & svg {
     position: absolute;
-    right: 36px;
+    right: 37px;
     top: 23px;
     fill: $svg-color;
   }
-
-
 }
 
 @media(min-width: $tablet-width) {
-
-
-
   .main-preview__title {
     @include font-text($OpenSans, 20px, 30px, 700);
 
     & svg {
       top: 31px;
-
     }
   }
-}
 
+  .main-preview {
+    @include wrapper;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+  }
+
+  .main-preview::after {
+    content: "";
+    position: absolute;
+    width: 770px;
+    height: 24px;
+    background: url("../../img/bg-zigzag-fill.svg") repeat-x;
+    bottom: -15px;
+    right: -35px;
+  }
+}
 
 @media(min-width: $desktop-width) {
 
@@ -84,4 +70,9 @@
     padding-right: 350px;
   }
 
+  .main-preview::after {
+    left: 0;
+    width: 1150px;
+    bottom: -10px;
+  }
 }

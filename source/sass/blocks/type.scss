@@ -1,4 +1,12 @@
-.type {}
+.type {
+  margin-top: 25px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media(min-width: $desktop-width) {}
+}
 
 /*
 .type fieldset {
@@ -20,14 +28,26 @@
 .type__radio {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
-  padding-left: 66px;
+  padding-left: 64px;
   position: relative;
   padding-top: 11px;
 
 
   @media(min-width: $tablet-width) {
     @include font-text($OpenSans, 19px, 18px, 700);
+    padding-top: 0;
+    padding-left: 80px;
+    margin-bottom: 30px;
   }
+}
+
+.type__radio:hover::before {
+  border-color: $seafoam-blue-radio;
+}
+
+.type__radio:active::before {
+  border-color: $text;
+  opacity: 0.3;
 }
 
 .type__radio::before {
@@ -43,6 +63,11 @@
   left: 0;
   z-index: 1;
 
+  @media(min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+  }
 }
 
 .type__radio::after {
@@ -57,6 +82,13 @@
   background-color: $seafoam-blue-radio;
   z-index: 2;
   opacity: 0;
+
+  @media(min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 15px;
+  }
 }
 
 .type__item input:checked+.type__radio::after {
@@ -70,7 +102,7 @@
 .type__item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   & input {
     appearance: none;
@@ -79,7 +111,7 @@
 
   @media(min-width: $tablet-width) {
     width: 500px;
-    margin-bottom: 18px;
+    margin-bottom: 28px;
   }
 }
 
@@ -93,6 +125,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
 
+  @media(min-width: $desktop-width) {
+    padding-right: 200px;
+    padding-left: 61px;
+    justify-content: flex-start;
   }
 }
