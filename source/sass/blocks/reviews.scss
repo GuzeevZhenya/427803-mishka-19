@@ -4,6 +4,11 @@
   justify-content: space-between;
   margin-top: 56px;
   position: relative;
+
+}
+
+.reviews svg {
+  cursor: pointer;
 }
 
 .reviews__wrapper {
@@ -22,6 +27,8 @@
   bottom: -50px;
   background-size: contain;
 }
+
+
 
 .reviews__title {
   @include font-text($OpenSans, 25px, 30px, 700);
@@ -73,10 +80,12 @@
   position: absolute;
   top: 14px;
   left: 35px;
+  outline: none;
 }
 
 .reviews__button {
   border: none;
+  outline: none;
 }
 
 .reviews__line {
@@ -90,6 +99,23 @@
   position: absolute;
   top: 15px;
   right: 38px;
+  outline: none;
+}
+
+.reviews__button--next svg:hover {
+  opacity: 0.6;
+}
+
+.reviews__button--next svg:active {
+  opacity: 0.3;
+}
+
+.reviews__button--prev svg:hover {
+  opacity: 0.6;
+}
+
+.reviews__button--prev svg:active {
+  opacity: 0.3;
 }
 
 .reviews__link {
@@ -122,7 +148,8 @@
     left: 50px;
     top: -40px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../../img/review@2x.jpg");
     }
   }
