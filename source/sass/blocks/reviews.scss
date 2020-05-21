@@ -4,7 +4,6 @@
   justify-content: space-between;
   margin-top: 56px;
   position: relative;
-
 }
 
 .reviews svg {
@@ -27,8 +26,6 @@
   bottom: -50px;
   background-size: contain;
 }
-
-
 
 .reviews__title {
   @include font-text($OpenSans, 25px, 30px, 700);
@@ -148,8 +145,7 @@
     left: 50px;
     top: -40px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../../img/review@2x.jpg");
     }
   }
