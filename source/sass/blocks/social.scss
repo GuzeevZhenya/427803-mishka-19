@@ -11,7 +11,7 @@
   line-height: 0;
   font-size: 0;
 
-  & svg:hover {
+  &:hover svg {
     fill: $svg-hover;
   }
 

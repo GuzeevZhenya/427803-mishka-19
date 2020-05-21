@@ -71,7 +71,7 @@ gulp.task("webp", function () {
 //Создание спрайтов
 gulp.task("sprite", function () {
   return gulp
-    .src("source/img/icon-*svg")
+    .src("source/img/*-*svg")
     .pipe(
       svgstore({
         inlineSvg: true, //Удаляет ненужные комменты
@@ -123,6 +123,6 @@ gulp.task("clean", function () {
 
 gulp.task(
   "build",
-  gulp.series("clean", "copy", "css", "sprite", "html", "images", "webp")
+  gulp.series("clean", "copy", "css", "html", "images", "webp", "sprite")
 );
 gulp.task("start", gulp.series("build", "server"));
