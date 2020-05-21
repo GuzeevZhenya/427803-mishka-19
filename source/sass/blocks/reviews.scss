@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.reviews svg {
+  cursor: pointer;
+}
+
 .reviews__wrapper {
   @include wrapper;
   flex-wrap: wrap;
@@ -73,10 +77,12 @@
   position: absolute;
   top: 14px;
   left: 35px;
+  outline: none;
 }
 
 .reviews__button {
   border: none;
+  outline: none;
 }
 
 .reviews__line {
@@ -90,6 +96,23 @@
   position: absolute;
   top: 15px;
   right: 38px;
+  outline: none;
+}
+
+.reviews__button--next svg:hover {
+  opacity: 0.6;
+}
+
+.reviews__button--next svg:active {
+  opacity: 0.3;
+}
+
+.reviews__button--prev svg:hover {
+  opacity: 0.6;
+}
+
+.reviews__button--prev svg:active {
+  opacity: 0.3;
 }
 
 .reviews__link {

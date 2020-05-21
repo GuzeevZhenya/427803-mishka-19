@@ -11,7 +11,7 @@
   }
 }
 
-.video__image:hover .video__play {
+.video a:hover .video__play {
   transform: scale(1.2);
 }
 
@@ -44,6 +44,7 @@
   position: absolute;
   top: 5px;
   left: 34px;
+  fill: #63d1bb;
 
   @media (min-width: $tablet-width) {
     top: 34px;
@@ -65,10 +66,7 @@
     top: 200px;
     left: 280px;
   }
-
-  @media (min-width: $desktop-width) {}
 }
-
 
 .video__image {
   order: 1;
