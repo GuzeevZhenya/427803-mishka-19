@@ -123,6 +123,6 @@ gulp.task("clean", function () {
 
 gulp.task(
   "build",
-  gulp.series("clean", "copy", "css", "sprite", "html", "images", "webp")
+  gulp.series("clean", "copy", "css", "html", "images", "webp", "sprite")
 );
 gulp.task("start", gulp.series("build", "server"));
