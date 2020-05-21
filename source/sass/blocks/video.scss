@@ -15,7 +15,6 @@
   transform: scale(1.2);
 }
 
-
 .video__title {
   @include font-text($OpenSans, 17px, 24px, 700);
   color: $black;
@@ -61,6 +60,10 @@
   position: absolute;
   top: 140px;
   left: 80px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     top: 200px;

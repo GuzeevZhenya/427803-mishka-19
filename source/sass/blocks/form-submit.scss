@@ -10,10 +10,6 @@
   }
 }
 
-.submit__wrapper {
-  @include wrapper;
-}
-
 .form__required {
   @include font-text($OpenSans, 14px, 16px, 400);
   display: block;

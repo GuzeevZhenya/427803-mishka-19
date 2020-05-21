@@ -1,7 +1,3 @@
-.main-image {
-  @include wrapper;
-}
-
 .main-image__title {
   @include font-text($OpenSans, 27px, 30px, 700);
   color: $very-dark-brown;

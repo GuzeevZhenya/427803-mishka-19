@@ -130,25 +130,25 @@
         </div>
       </div>
 
-      <div class="form__fio fio">
-        <div class="fio__wrapper">
+      <div class="form__username username">
+        <div class="username__wrapper">
           <fieldset>
-            <div class="fio__container">
-              <legend class="form__title fio__title">
+            <div class="username__container">
+              <legend class="form__title username__title">
                 ФИО
               </legend>
-              <ul class="fio__list">
-                <li class="fio__item">
-                  <label for="fio-name">Имя:</label>
-                  <input name="fio" id="fio-name" type="text" placeholder="Введите ваше имя*">
+              <ul class="username__list">
+                <li class="username__item">
+                  <label for="username-name">Имя:</label>
+                  <input name="username" id="username-name" type="text" placeholder="Введите ваше имя*">
                 </li>
-                <li class="fio__item">
-                  <label for="fio-surname">Фамилия:</label>
-                  <input name="fio" id="fio-surname" type="text" placeholder="Укажите фамилию*">
+                <li class="username__item">
+                  <label for="username-surname">Фамилия:</label>
+                  <input name="username" id="username-surname" type="text" placeholder="Укажите фамилию*">
                 </li>
-                <li class="fio__item">
-                  <label for="fio-patronymic">Отчество:</label>
-                  <input name="fio" id="fio-patronymic" type="text" placeholder="Отчество, если желаете">
+                <li class="username__item">
+                  <label for="username-patronymic">Отчество:</label>
+                  <input name="username" id="username-patronymic" type="text" placeholder="Отчество, если желаете">
                 </li>
               </ul>
             </div>
@@ -161,9 +161,9 @@
           <div class="telephone__wrapper">
             <fieldset>
               <div class="telephone__container">
-                <legend class="form__title telephone__title">
+                <label for="number" class="form__title telephone__title">
                   Тел
-                </legend>
+                </label>
                 <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <svg width="24.829px" height="24.333px">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -176,9 +176,9 @@
           <div class="email__wrapper">
             <fieldset>
               <div class="email__container">
-                <legend class="form__title email__title">
+                <label for="email" class="form__title email__title">
                   E-mail
-                </legend>
+                </label>
                 <input name="email" id="email" type="text" placeholder="Ваш Email*">
 
                 <svg width="32px" height="32px">
@@ -194,10 +194,10 @@
         <div class="additionally__wrapper">
           <fieldset>
             <div class="additionally__container">
-              <legend class="form__title additionally__title">
+              <label for="textarea" class="form__title additionally__title">
                 Доп
-              </legend>
-              <textarea class="additionally__textarea" name="" id="" cols=" 30" rows="10"
+              </label>
+              <textarea class="additionally__textarea" name="textarea" id="textarea" cols=" 30" rows="10"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
