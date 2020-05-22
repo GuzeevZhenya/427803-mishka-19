@@ -7,6 +7,8 @@
 }
 
 .email input {
+  @include font-text($OpenSans, 17px, 18px, 400);
+  color: $text;
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
@@ -22,7 +24,7 @@
   border-color: $seafoam-blue-radio;
 }
 
-.email ::placeholder {
+.email input::placeholder {
   @include font-text($OpenSans, 17px, 18px, 400);
   color: $gray-placeholder;
 }
@@ -47,8 +49,10 @@
   }
 
   .email input {
+    @include font-text($OpenSans, 19px, 18px, 400);
     width: 500px;
     background-color: inherit;
+    padding-left: 15px;
   }
 
   .email__container {
@@ -63,8 +67,8 @@
     }
   }
 
-  .email ::placeholder {
-    padding-left: 17px;
+  .email input::placeholder {
+    @include font-text($OpenSans, 19px, 18px, 400);
   }
 }
 

@@ -62,6 +62,7 @@
   }
 
   .username__item label {
+    @include font-text($OpenSans, 19px, 18px, 700);
     margin-right: 25px;
   }
 

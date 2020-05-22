@@ -3,6 +3,8 @@
 }
 
 .telephone input {
+  @include font-text($OpenSans, 19px, 18px, 400);
+  color: $text;
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
@@ -31,7 +33,7 @@
   margin-bottom: 7px;
 }
 
-.telephone::placeholder {
+.telephone input::placeholder {
   @include font-text($OpenSans, 19px, 18px, 400);
   color: $gray-placeholder;
 }
@@ -43,6 +45,7 @@
     position: absolute;
     top: 37px;
     right: 0;
+    opacity: 0.2;
   }
 }
 
@@ -56,6 +59,7 @@
   .telephone input {
     width: 500px;
     background-color: inherit;
+    padding-left: 17px;
   }
 
   .telephone__title {
@@ -73,8 +77,8 @@
     }
   }
 
-  .telephone::placeholder {
-    padding-left: 17px;
+  .telephone input::placeholder {
+
   }
 }
 
@@ -89,7 +93,6 @@
     & svg {
       right: 200px;
       top: 15px;
-      opacity: 0.2;
     }
   }
 

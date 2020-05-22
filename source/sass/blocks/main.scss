@@ -35,6 +35,20 @@
   }
 
   .main__description {
+    @include font-text($OpenSans, 17px, 30px, 400);
     padding-top: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main__description {
+    max-width: 675px;
+    padding: 0;
+    padding-top: 60px;
+  }
+
+  .main__title {
+    @include font-text($OpenSans, 53px, 57px, 700);
+  }
+}
+

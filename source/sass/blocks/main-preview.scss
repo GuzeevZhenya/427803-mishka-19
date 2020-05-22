@@ -1,11 +1,6 @@
 .main-preview__item {
-  padding: 30px 0 30px 29px;
+  padding: 27px 0 28px 30px;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    padding: 28px 185px 26px 33px;
-    width: 50%;
-  }
 }
 
 .main-preview__item:hover {
@@ -39,13 +34,18 @@
 
   & svg {
     position: absolute;
-    right: 37px;
+    right: 52px;
     top: 23px;
     fill: $svg-color;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .main-preview__item {
+    padding: 30px 185px 29px 33px;
+    width: 50%;
+  }
+
   .main-preview__title {
     @include font-text($OpenSans, 20px, 30px, 700);
 
@@ -54,28 +54,43 @@
     }
   }
 
-  .main-preview {
-    @include wrapper;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-  }
-
-  .main-preview::after {
+  .main-preview__interior-items::before {
     content: "";
     position: absolute;
-    width: 770px;
+    width: 350px;
     height: 24px;
-    background: url("../../img/bg-zigzag-fill.svg") repeat-x;
-    bottom: -15px;
-    right: -35px;
+    background: url("../../img/bg-zigzag-fill.svg") no-repeat;
+    bottom: -9px;
+    left: -14px;
+  }
+
+  .main-preview__kid-games::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 24px;
+    background: url("../../img/bg-zigzag-fill.svg") no-repeat;
+    bottom: -9px;
+    right: -16px;
+  }
+
+  .main-preview {
+    display: flex;
+    flex-direction: row;
+    max-width: 668px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -117px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-preview__item {
     padding-right: 350px;
+  }
+  .main-preview{
+    max-width: 1048px;
   }
 
   .main-preview::after {
