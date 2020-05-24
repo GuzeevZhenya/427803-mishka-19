@@ -1,5 +1,5 @@
 .username {
-  margin-top: 34px;
+  margin-top: 6px;
 }
 
 .username__wrapper {
@@ -8,6 +8,7 @@
 
 .username__list {
   @include list-reset;
+  margin-top: 23px;
 }
 
 
@@ -43,8 +44,12 @@
 
 @media (min-width: $tablet-width) {
   .username {
-    margin-top: 50px;
+    margin-top: 22px;
     margin-bottom: 37px;
+  }
+
+  .username__title {
+    padding-top: 24px;
   }
 
   .username__list {
@@ -69,7 +74,7 @@
   .username__item input {
     margin-top: -16px;
     height: 52px;
-    padding-left: 25px;
+    padding-left: 16px;
   }
 
   .username__container {
@@ -80,12 +85,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .username {
+    margin-top: 0;
+  }
+
+
   .username__list {
     width: 100%;
+    margin: 0;
   }
 
   .username__item label {
     padding: 0;
+    margin-right: 25px;
+    margin-left: 14px;
   }
 
   .username__item input {
@@ -97,6 +110,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding: 50px 200px 50px 61px;
+    padding: 63px 175px 0 62px;
   }
 }

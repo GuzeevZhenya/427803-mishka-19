@@ -13,7 +13,7 @@
   color: $seafoam-blue;
   border: none;
   padding-right: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   position: relative;
   background: none;
   outline: none;
@@ -33,6 +33,9 @@
 }
 
 @media (min-width: $tablet-width) {
+
+
+  .form__title {}
 
   /*
   .form fieldset {

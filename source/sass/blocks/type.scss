@@ -79,12 +79,13 @@
   }
 }
 
-.type__item input:checked + .type__radio::after {
+.type__item input:checked+.type__radio::after {
   opacity: 1;
 }
 
 .type__list {
   @include list-reset;
+  margin-top: 26px;
 }
 
 .type__item {
