@@ -68,7 +68,7 @@
   opacity: 0;
 }
 
-.color__input:checked+.color__name::after {
+.color__input:checked + .color__name::after {
   opacity: 1;
 }
 
@@ -87,8 +87,6 @@
     padding-top: 65px;
     padding-bottom: 11px;
   }
-
-
 
   .color__list {
     display: flex;
@@ -122,8 +120,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
-
   .color__list {
     justify-content: flex-start;
   }

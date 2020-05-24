@@ -21,9 +21,9 @@
 
 @media (min-width: $tablet-width) {
   .main__title {
+    @include font-text($OpenSans, 43px, 50px, 700);
     padding-top: 95px;
     padding-bottom: 90px;
-    @include font-text($OpenSans, 43px, 50px, 700);
   }
 
   .main__title::after {
@@ -49,14 +49,14 @@
     padding-top: 123px;
   }
 
+  .main__title::after {
+    top: 325px;
+    right: -14px;
+  }
+
   .main__title {
     @include font-text($OpenSans, 53px, 57px, 700);
     padding-top: 95px;
     padding-bottom: 99px;
-  }
-
-  .main__title:after {
-    top: 325px;
-    right: -14px
   }
 }

@@ -77,12 +77,9 @@
       right: 26px;
     }
   }
-
-  .telephone input::placeholder {}
 }
 
 @media (min-width: $desktop-width) {
-
   .telephone__title {
     margin-bottom: 17px;
   }

@@ -33,16 +33,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
-
-  .form__title {}
-
-  /*
-  .form fieldset {
-    border: none;
-    margin-top: 50px;
-  }
-*/
   .form__title::after {
     display: none;
   }
