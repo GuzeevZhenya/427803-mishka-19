@@ -3,8 +3,18 @@
   position: relative;
 }
 
+.header__toggle {
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  background-color: #ffffff;
+  border: none;
+  display: none;
+}
+
 .header__logo img {
-  padding: 12px 0;
+  padding-top: 21px;
+  padding-bottom: 15px;
   margin-left: 86px;
 }
 
@@ -17,13 +27,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header__toggle {
+    display: none;
+  }
+
   .header {
     border-bottom: 1px solid $white-two;
   }
 
   .header__logo img {
     position: absolute;
-    top: 0;
+    padding-top: 12px;
+    top: 12px;
     left: -38px;
     z-index: 2;
   }
@@ -32,7 +47,7 @@
 @media (min-width: $desktop-width) {
   .header__logo img {
     margin: 0;
-    top: -10px;
+    top: -4px;
     left: 500px;
     display: block;
   }

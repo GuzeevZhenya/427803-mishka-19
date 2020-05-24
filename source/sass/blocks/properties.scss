@@ -18,8 +18,10 @@
   padding-right: 30px;
 }
 
-.properties dt {
+.properties dt,
+.properties dd {
   @include font-text($OpenSans, 15px, 20px, 400);
+  margin-left: 0;
   color: $text;
 }
 
@@ -37,7 +39,7 @@
   }
 
   .properties__group {
-    padding-bottom: 13px;
-    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-top: 10px;
   }
 }

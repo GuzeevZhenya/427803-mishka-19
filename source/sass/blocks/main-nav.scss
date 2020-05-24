@@ -3,6 +3,7 @@
   //display: flex;
   flex-wrap: wrap;
   display: block;
+  //display: none;
 }
 
 .main-nav__delivery {
@@ -10,19 +11,7 @@
   color: $text;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  right: 25px;
-  top: 22px;
-  background-color: #ffffff;
-  border: none;
-}
-
 @media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav__delivery {
     @include font-text($OpenSans, 15px, 24px, 400);
     right: 0;

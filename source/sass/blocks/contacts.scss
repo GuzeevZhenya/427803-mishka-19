@@ -84,6 +84,11 @@
 
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 84px;
+    margin-bottom: 58px;
+  }
+
   .contacts__block {
     flex-direction: row;
     margin-bottom: 568px;
@@ -116,10 +121,22 @@
 
   .contacts__title {
     @include font-text($OpenSans, 43px, 50px, 700);
-    margin-bottom: 47px;
+    margin-bottom: 49px;
+    margin-left: -5px;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 55px;
+    width: 46px;
+    height: 81px;
+    background-image: url("../../img/icon-flag.svg");
   }
 
   .contacts__link {
+    @include font-text($OpenSans, 17px, 20px, 700);
     margin: 0 auto;
     max-width: 230px;
   }
@@ -128,9 +145,14 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-top: 175px;
+    margin-top: 168px;
     padding-bottom: 105px;
     margin-bottom: 0;
+  }
+
+  .contacts__title::after {
+    left: 112px;
+    top: -9px;
   }
 
   .contacts__title {
@@ -146,15 +168,20 @@
   .contacts__block {
     flex-direction: column;
     max-width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .contacts__email {
+    justify-content: flex-start;
     margin-bottom: 30px;
   }
 
   .contacts__adress {
     margin: 0;
+  }
+
+  .contacts__adress p {
+    padding-right: 24px;
   }
 
   .contacts__link {

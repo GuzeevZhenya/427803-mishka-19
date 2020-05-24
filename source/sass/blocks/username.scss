@@ -1,17 +1,18 @@
-.fio {
-  margin-top: 34px;
+.username {
+  margin-top: 6px;
 }
 
-.fio__wrapper {
+.username__wrapper {
   @include wrapper;
 }
 
-.fio__list {
+.username__list {
   @include list-reset;
+  margin-top: 23px;
 }
 
 
-.fio__item input {
+.username__item input {
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
@@ -20,58 +21,63 @@
   outline: none;
 }
 
-.fio__item input:hover,
-.fio__item input:active,
-.fio__item input:focus {
+.username__item input:hover,
+.username__item input:active,
+.username__item input:focus {
   border-color: $seafoam-blue-radio;
 }
 
-.fio__item:last-child input {
+.username__item:last-child input {
   margin-bottom: 0;
 }
 
-.fio__item label {
+.username__item label {
   @include font-text($OpenSans, 17px, 18px, 700);
   color: $black;
   display: block;
 }
 
-.fio__item ::placeholder {
+.username__item ::placeholder {
   @include font-text($OpenSans, 17px, 18px, 400);
   color: $gray-placeholder;
 }
 
 @media (min-width: $tablet-width) {
-  .fio {
-    margin-top: 50px;
+  .username {
+    margin-top: 22px;
     margin-bottom: 37px;
   }
 
-  .fio__list {
+  .username__title {
+    padding-top: 24px;
+  }
+
+  .username__list {
     width: 500px;
   }
 
-  .fio__item ::placeholder {
+  .username__item ::placeholder {
     @include font-text($OpenSans, 19px, 18px, 400);
   }
 
-  .fio__item {
+  .username__item {
     display: flex;
     text-align: center;
     margin-bottom: 15px;
   }
 
-  .fio__item label {
+  .username__item label {
+    @include font-text($OpenSans, 19px, 18px, 700);
     margin-right: 25px;
   }
 
-  .fio__item input {
+  .username__item input {
     margin-top: -16px;
     height: 52px;
-    padding-left: 25px;
+    padding-left: 16px;
   }
 
-  .fio__container {
+  .username__container {
     padding-top: 18px;
     display: flex;
     justify-content: space-between;
@@ -79,23 +85,31 @@
 }
 
 @media (min-width: $desktop-width) {
-  .fio__list {
+  .username {
+    margin-top: 0;
+  }
+
+
+  .username__list {
     width: 100%;
+    margin: 0;
   }
 
-  .fio__item label {
+  .username__item label {
     padding: 0;
+    margin-right: 25px;
+    margin-left: 14px;
   }
 
-  .fio__item input {
+  .username__item input {
     width: 100%;
     margin-top: -15px;
   }
 
-  .fio__container {
+  .username__container {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding: 50px 200px 50px 61px;
+    padding: 63px 175px 0 62px;
   }
 }
