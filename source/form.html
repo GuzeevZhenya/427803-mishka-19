@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mishka</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -40,7 +41,7 @@
                 Поиск по сайту</a>
             </li>
             <li class="site-list__item site-list__item--basket-tablet">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="cart.html">
                 <svg class="site-list__search-svg" width="21px" height="18px">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -162,7 +163,7 @@
                 <label for="number" class="form__title telephone__title">
                   Тел
                 </label>
-                <input name="telephone" id="number" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <input name="telephone" id="number" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <svg width="24.829px" height="24.333px">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
@@ -177,7 +178,7 @@
                 <label for="email" class="form__title email__title">
                   E-mail
                 </label>
-                <input name="email" id="email" type="text" placeholder="Ваш Email*">
+                <input name="email" id="email" type="email" placeholder="Ваш Email*">
                 <svg width="32px" height="32px">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
