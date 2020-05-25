@@ -12,6 +12,7 @@
 
 .color__list {
   @include list-reset;
+  margin-top: 26px;
 }
 
 .color__item {
@@ -74,6 +75,7 @@
 @media (min-width: $tablet-width) {
   .color {
     background-color: $white;
+    margin-top: 10px;
   }
 
   .color__name::after {
@@ -82,11 +84,8 @@
   }
 
   .color__wrapper {
-    padding-top: 50px;
-  }
-
-  .color__item:last-child {
-    margin-bottom: 43px;
+    padding-top: 65px;
+    padding-bottom: 11px;
   }
 
   .color__list {
@@ -97,13 +96,13 @@
 
   .color__item {
     width: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 59px;
     margin-left: 60px;
   }
 
   .color__name {
     @include font-text($OpenSans, 17px, 18px, 700);
-    margin-bottom: 15px;
+    margin-bottom: -11px;
   }
 
   .color__container {
@@ -125,10 +124,29 @@
     justify-content: flex-start;
   }
 
+  .color__wrapper {
+    padding-top: 14px;
+  }
+
+  .color__item {
+    width: 209px;
+    margin-left: 55px;
+  }
+
   .color__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 50px 200px 50px 61px;
+    padding: 50px 140px 0 61px;
+  }
+
+  .color__name::before {
+    width: 54px;
+  }
+
+  .color__name::after {
+    width: 33px;
+    height: 22px;
+    left: 12px;
   }
 }

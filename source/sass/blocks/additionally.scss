@@ -13,6 +13,9 @@
   width: 100%;
   outline: 0;
   padding: 18px 0 0 17px;
+  margin-top: 23px;
+  max-height: 142px;
+  border: 2px solid $text;
 }
 
 .additionally__textarea:hover,
@@ -26,11 +29,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additionally {
+    padding-bottom: 50px;
+  }
+
   .additionally__textarea {
     max-width: 500px;
     height: 142px;
     margin-bottom: 53px;
     border: 2px solid $very-dark-brown;
+    padding: 12px 0 0 14px;
   }
 
   .additionally__textarea::placeholder {
@@ -44,13 +52,21 @@
   }
 
   .additionally__title {
-    padding-top: 19px;
+    padding-top: 39px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additionally {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
   .additionally__textarea {
     max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 14px;
   }
 
   .additionally__textarea::placeholder {
@@ -61,6 +77,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding: 0 200px 0 61px;
+    padding: 0 176px 0 63px;
   }
 }

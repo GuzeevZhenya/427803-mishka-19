@@ -12,7 +12,7 @@
 
   <header class="header">
     <div class="header__wrapper">
-      <a href="#" class="header__logo">
+      <a href="index.html" class="header__logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -51,7 +51,8 @@
                 Новые поступления
               </a>
             </li>
-            <li class="site-list__item site-list__item--out site-list__item--out-tablet site-list__desktop-bottom site-list__desktop-middle">
+            <li
+              class="site-list__item site-list__item--out site-list__item--out-tablet site-list__desktop-bottom site-list__desktop-middle">
               <a class="site-list__link" href="#"> Распродажа </a>
             </li>
             <li
@@ -72,12 +73,9 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__type type">
         <div class="type__wrapper">
-
           <fieldset>
             <div class="type__container">
-              <div class="type__legend">
-                <legend class="form__title type__title">Тип</legend>
-              </div>
+              <label class="form__title type__title">Тип</label>
               <ul class="type__list">
                 <li class="type__item">
                   <input name="type-order" id="accessories" type="radio" checked>
@@ -98,7 +96,7 @@
         <div class="color__wrapper">
           <fieldset>
             <div class="color__container">
-              <legend class="form__title color__title">Цвет</legend>
+              <label class="form__title color__title">Цвет</label>
               <ul class="color__list">
                 <li class="color__item">
                   <input class="color__input" name="color" id="white" type="checkbox" checked>
@@ -134,9 +132,9 @@
         <div class="username__wrapper">
           <fieldset>
             <div class="username__container">
-              <legend class="form__title username__title">
+              <label class="form__title username__title">
                 ФИО
-              </legend>
+              </label>
               <ul class="username__list">
                 <li class="username__item">
                   <label for="username-name">Имя:</label>
