@@ -1,5 +1,5 @@
 .video {
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 33px;
   position: relative;
 
@@ -41,7 +41,7 @@
 
 .video__title-svg {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 30px;
   fill: #63d1bb;
 
@@ -81,15 +81,20 @@
 .video__description {
   @include font-text($OpenSans, 13px, 24px, 400);
   color: $text;
-  margin: 25px 0 27px 0;
+  margin: 29px 0 27px 0;
   padding: 0 34px;
 
   @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 15px, 30px, 400);
-    margin-bottom: 48px;
-    margin-top: 33px;
+    margin-bottom: 36px;
+    margin-top: 34px;
     padding: 0 40px;
     order: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+    margin-top: 35px;
   }
 }
 

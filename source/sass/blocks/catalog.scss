@@ -1,6 +1,6 @@
 .catalog {
-  padding-bottom: 58px;
-  margin-top: -2px;
+  padding-bottom: 56px;
+  margin-top: -4px;
 }
 
 .catalog__wrapper {
@@ -9,7 +9,7 @@
 
 .catalog__item {
   border: 1px solid $white-two;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .catalog__item-box {
@@ -27,8 +27,8 @@
 }
 
 .catalog__item-info {
-  padding: 28px 26px;
-  padding-bottom: 29px;
+  padding: 27px 26px;
+  padding-bottom: 27px;
 }
 
 .catalog__item-title {
@@ -54,7 +54,7 @@
   @include font-text($OpenSans, 13px, 30px, 400);
   color: $text;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -68,8 +68,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    margin-top: 83px;
-    padding-bottom: 68px;
+    margin-top: 71px;
+    padding-bottom: 62px;
   }
 
   .catalog__item {
@@ -116,7 +116,7 @@
 @media (min-width: $desktop-width) {
   .catalog {
     margin-top: 77px;
-    padding-bottom: 68px;
+    padding-bottom: 104px;
   }
 
   .catalog__wrapper {
