@@ -2,7 +2,7 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 59px;
   }
 }
 
@@ -13,6 +13,9 @@
 .type__title {
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $seafoam-blue;
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
 }
 
 .type__radio {
@@ -85,7 +88,7 @@
 
 .type__list {
   @include list-reset;
-  margin-top: 26px;
+  margin-top: 15px;
 }
 
 .type__item {

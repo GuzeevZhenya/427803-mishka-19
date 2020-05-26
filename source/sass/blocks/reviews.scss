@@ -219,7 +219,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-bottom: 130px;
-    padding-top: 80px;
+    padding-top: 77px;
   }
 
   .reviews__wrapper::after {
@@ -236,6 +236,9 @@
   }
 
   .reviews::before {
+    max-width: 1050px;
+    left: 50px;
+    right: 0;
     height: 23px;
   }
 

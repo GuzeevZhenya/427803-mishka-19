@@ -16,14 +16,6 @@
   position: relative;
 }
 
-.main-preview__kid-games {
-  background-color: $greeny-blue;
-  position: relative;
-
-  & svg {
-    fill: #149080;
-  }
-}
 
 .main-preview__title {
   @include font-text($OpenSans, 19px, 24px, 700);
@@ -34,9 +26,19 @@
 
   & svg {
     position: absolute;
-    right: 52px;
+    right: 35px;
     top: 23px;
     fill: $svg-color;
+  }
+}
+
+.main-preview__kid-games {
+  background-color: $greeny-blue;
+  position: relative;
+
+  & svg {
+    fill: #149080;
+    right: 28px;
   }
 }
 
@@ -81,7 +83,8 @@
   }
 
   .main-preview {
-    max-width: 100%;
+    max-width: 1150px;
+    padding: 0 51px;
 
     & svg {
       top: 31px;
@@ -90,7 +93,7 @@
   }
 
   .main-preview::after {
-    left: 0;
+    left: -38px;
     width: 100%;
     bottom: -10px;
   }

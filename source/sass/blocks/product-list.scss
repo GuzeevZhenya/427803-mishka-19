@@ -142,7 +142,10 @@
   }
 
   .product-list__wrapper::before {
+    max-width: 1050px;
+    left: 50px;
+    right: 0;
     height: 23px;
-    bottom: -104px;
+    bottom: -97px;
   }
 }
