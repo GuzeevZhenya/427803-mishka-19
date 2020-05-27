@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   min-width: 260px;
+ // padding-bottom: 4px;
 }
 
 .site-list__item {
@@ -58,6 +59,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    padding-bottom: 0;
   }
 
   .site-list__link--tablet {
@@ -66,7 +68,7 @@
   }
 
   .site-list__item--tablet {
-    width: 322px;
+    width: 317px;
     order: -1;
   }
 
@@ -86,7 +88,7 @@
     padding: 32px 0;
 
     & svg {
-      left: 28px;
+      left: 32px;
       top: 35px;
       opacity: 0.2;
     }
@@ -104,7 +106,7 @@
     display: block;
     border-left: 1px solid $white-two;
     border-right: 1px solid $white-two;
-    width: 82px;
+    width: 84px;
   }
 
   .site-list__bottom-center {

@@ -1,5 +1,5 @@
 .telephone {
-  margin-top: 26px;
+  margin-top: 29px;
 }
 
 .telephone input {
@@ -40,6 +40,7 @@
 
 .telephone__container {
   position: relative;
+  overflow-x: hidden;
 
   & svg {
     position: absolute;
@@ -70,6 +71,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     //  margin-bottom: 15px;
 
     & svg {

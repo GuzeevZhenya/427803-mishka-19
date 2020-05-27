@@ -1,5 +1,5 @@
 .email {
-  margin-top: 9px;
+  margin-top: 7px;
 }
 
 .email__wrapper {
@@ -30,6 +30,7 @@
 
 .email__container {
   position: relative;
+  overflow-x: hidden;
 
   & svg {
     position: absolute;

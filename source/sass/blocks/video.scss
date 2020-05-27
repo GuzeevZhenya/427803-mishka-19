@@ -1,6 +1,6 @@
 .video {
   padding-top: 24px;
-  padding-bottom: 33px;
+  padding-bottom: 32px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 20px, 24px, 700);
-    padding-top: 38px;
+    padding-top: 40px;
     padding-left: 60px;
     padding-bottom: 0;
     margin-left: 42px;
@@ -42,7 +42,7 @@
 .video__title-svg {
   position: absolute;
   top: 5px;
-  left: 30px;
+  left: 33px;
   fill: #63d1bb;
 
   @media (min-width: $tablet-width) {
@@ -87,12 +87,12 @@
   @media (min-width: $tablet-width) {
     @include font-text($OpenSans, 15px, 30px, 400);
     margin-bottom: 36px;
-    margin-top: 34px;
+    margin-top: 31px;
     padding: 0 40px;
     order: 3;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 46px;
     margin-top: 35px;
   }

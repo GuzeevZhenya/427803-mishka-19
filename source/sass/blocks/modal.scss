@@ -16,7 +16,7 @@
   display: none;
 }
 
-.select {
+.modal__select {
   display: flex;
   justify-content: space-between;
 }
@@ -57,16 +57,28 @@
   border: none;
 }
 
+.modal__size--active {
+  border-color:$seafoam-blue ;
+}
+
+
 @media (min-width: $tablet-width) {
   .modal {
     width: 566px;
     margin: 0 auto;
+    padding-top: 31px;
   }
 
   .modal__title {
     @include font-text($OpenSans, 30px, 57px, 700);
     margin: 0;
     max-width: 100%;
+  }
+
+  .modal__description {
+    @include font-text($OpenSans, 17px, 30px, 400);
+    margin-top: 16px;
+    margin-bottom: 21px;
   }
 
   .modal__wrapper {

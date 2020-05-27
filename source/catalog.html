@@ -305,13 +305,13 @@
     </div>
   </footer>
 
-  <form class="modal">
+  <form class="modal" action="https://echo.htmlacademy.ru" method="get">
     <div class="modal__wrapper">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__description">Выберите размер:</p>
-      <div class="select">
+      <div class="modal__select select">
         <input name="select-size" type="radio" id="s-size" />
-        <label class="modal__size" for="s-size">s</label>
+        <label class="modal__size modal__size--active" for="s-size">s</label>
         <input name="select-size" type="radio" id="m-size" />
         <label class="modal__size" for="m-size">m</label>
         <input name="select-size" type="radio" id="l-size" />
@@ -320,6 +320,7 @@
       <button type="submit" class="modal__button button">Добавить</button>
     </div>
   </form>
+
 </body>
 
 </html>

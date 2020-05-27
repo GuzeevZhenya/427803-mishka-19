@@ -8,11 +8,17 @@
   height: 457px;
   border: none;
   position: absolute;
-  bottom: 132px;
+  bottom: 129px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: $tablet-width){
+  .map__location{
+    bottom: 166px;
+  }
 }
 
 @media (min-width: $desktop-width) {

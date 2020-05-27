@@ -3,6 +3,12 @@
     padding-top: 48px;
     padding-bottom: 25px;
     background-color: $white;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts {
+    margin-bottom: 59px;
   }
 }

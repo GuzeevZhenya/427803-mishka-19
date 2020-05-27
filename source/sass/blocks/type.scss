@@ -2,7 +2,7 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 59px;
+    margin-top: 57px;
   }
 }
 
@@ -13,6 +13,7 @@
 .type__title {
   @include font-text($OpenSans, 17px, 16px, 700);
   color: $seafoam-blue;
+
   @media (min-width: $tablet-width) {
     padding-top: 18px;
   }
@@ -108,6 +109,8 @@
 }
 
 .type__container {
+  overflow-x: hidden;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     display: flex;

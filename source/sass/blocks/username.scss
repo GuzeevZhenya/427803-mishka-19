@@ -1,5 +1,5 @@
 .username {
-  margin-top: 6px;
+  margin-top: 9px;
 }
 
 .username__wrapper {
@@ -13,11 +13,13 @@
 
 
 .username__item input {
+  @include font-text($OpenSans, 19px, 18px, 700);
+  color: $text;
   border: none;
   width: 100%;
   border-bottom: 2px solid $black;
   height: 52px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   outline: none;
 }
 
@@ -39,7 +41,11 @@
 
 .username__item ::placeholder {
   @include font-text($OpenSans, 17px, 18px, 400);
-  color: $gray-placeholder;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.username__container {
+  overflow-x: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,13 +78,13 @@
   }
 
   .username__item input {
-    margin-top: -16px;
+    margin-top: -14px;
     height: 52px;
     padding-left: 16px;
   }
 
   .username__container {
-    padding-top: 18px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -87,9 +93,12 @@
 @media (min-width: $desktop-width) {
   .username {
     margin-top: 0;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
+  .username__item {
+    margin-bottom: 17px;
+  }
 
   .username__list {
     width: 100%;

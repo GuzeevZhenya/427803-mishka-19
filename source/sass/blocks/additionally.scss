@@ -1,5 +1,6 @@
 .additionally {
-  padding-bottom: 55px;
+  padding-bottom: 51px;
+  padding-top: 7px;
 }
 
 .additionally__wrapper {
@@ -8,14 +9,17 @@
 
 .additionally__textarea {
   @include font-text($OpenSans, 17px, 18px, 400);
-  font-family: $OpenSans;
   color: $text;
   width: 100%;
   outline: 0;
-  padding: 18px 0 0 17px;
-  margin-top: 23px;
+  padding: 15px 0 0 15px;
+  margin-top: 18px;
   max-height: 142px;
   border: 2px solid $text;
+}
+
+.additionally__container {
+  overflow-x: hidden;
 }
 
 .additionally__textarea:hover,
@@ -49,6 +53,7 @@
   .additionally__container {
     display: flex;
     justify-content: space-between;
+    overflow: visible;
   }
 
   .additionally__title {
@@ -58,7 +63,6 @@
 
 @media (min-width: $desktop-width) {
   .additionally {
-    padding-top: 36px;
     padding-bottom: 0;
   }
 
