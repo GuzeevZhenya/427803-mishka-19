@@ -20,12 +20,18 @@
           <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип Мишка" />
         </picture>
       </a>
+
+      <!-- header__toggle / --open - управление внешним видом кнопки -->
+      <!--header__toggle - открытие / закрытие меню при вкл/ откл js -->
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <svg width="19.958px" height="14px">
           <use xlink:href="img/sprite.svg#icon-menu-close"></use>
         </svg>
       </button>
+      <!-- main-nav__list--open - при наличии JS меню открывается -->
+      <!-- main-nav__list--close - при наличии JS меню зарывается -->
+      <!-- main-nav - при отсутсвии JS меню всегда отрыто -->
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -294,6 +300,10 @@
       </a>
     </div>
   </footer>
+
+  <!-- modal-order--open - Открывает попап при наличии JS -->
+  <!-- modal-order--close - Закрывает попап при наличии JS -->
+  <!-- modal-order - При отстуствиии JS попап скрыт -->
 
   <form class="modal" action="https://echo.htmlacademy.ru" method="get">
     <div class="modal__wrapper">
